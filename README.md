@@ -3,6 +3,15 @@
 ## MindMap
 ![ScreenShot](Screenshot%202021-04-11%20at%201.52.55%20PM.png)
 
+## AWS Usage 
+
+- AWS S3
+- AWS SageMaker
+- AWS Notebook 
+- AWS Docker 
+- AWS Lamba 
+- AWS Postgress Hosted DB
+
 ## Presentation & Demo 
 
 - [Show Me Presentation Doc](https://docs.google.com/presentation/d/1ePtYMMcNh0xxAyPvUzy8mmKlIHEXTba2BoR8BYLSb-A/edit?usp=sharing)
