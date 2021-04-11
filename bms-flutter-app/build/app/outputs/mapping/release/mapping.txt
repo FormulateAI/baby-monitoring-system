@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 2.1.62
-# min_api: 16
-# pg_map_id: 2f489c9
+# min_api: 21
+# pg_map_id: 9b557ce
 # common_typos_disable
 android.support.v4.media.MediaBrowserCompat$CustomActionCallback -> android.support.v4.media.a:
     void onError(java.lang.String,android.os.Bundle,android.os.Bundle) -> a
@@ -505,6 +505,8 @@ androidx.core.graphics.drawable.IconCompat -> androidx.core.graphics.drawable.Ic
     void onPostParceling() -> e
     void onPreParceling(boolean) -> f
     java.lang.String typeToString(int) -> g
+androidx.core.math.MathUtils -> b.c.b.a:
+    float clamp(float,float,float) -> a
 androidx.fragment.app.Fragment -> androidx.fragment.app.a:
     android.view.View mView -> a
 androidx.fragment.app.Fragment$2 -> androidx.fragment.app.Fragment$2:
@@ -1239,16 +1241,17 @@ io.flutter.embedding.engine.dart.DartExecutor -> io.flutter.embedding.engine.e.a
     boolean isApplicationRunning -> e
     io.flutter.plugin.common.BinaryMessenger binaryMessenger -> d
     void send(java.lang.String,java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
-    java.lang.String access$000(io.flutter.embedding.engine.dart.DartExecutor) -> b
-    java.lang.String access$002(io.flutter.embedding.engine.dart.DartExecutor,java.lang.String) -> c
-    void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler) -> d
-    io.flutter.embedding.engine.dart.DartExecutor$IsolateServiceIdListener access$100(io.flutter.embedding.engine.dart.DartExecutor) -> e
-    void executeDartEntrypoint(io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint) -> f
-    java.lang.String getIsolateServiceId() -> g
-    boolean isExecutingDart() -> h
-    void notifyLowMemoryWarning() -> i
-    void onAttachedToJNI() -> j
-    void onDetachedFromJNI() -> k
+    void send(java.lang.String,java.nio.ByteBuffer) -> b
+    java.lang.String access$000(io.flutter.embedding.engine.dart.DartExecutor) -> c
+    java.lang.String access$002(io.flutter.embedding.engine.dart.DartExecutor,java.lang.String) -> d
+    void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler) -> e
+    io.flutter.embedding.engine.dart.DartExecutor$IsolateServiceIdListener access$100(io.flutter.embedding.engine.dart.DartExecutor) -> f
+    void executeDartEntrypoint(io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint) -> g
+    java.lang.String getIsolateServiceId() -> h
+    boolean isExecutingDart() -> i
+    void notifyLowMemoryWarning() -> j
+    void onAttachedToJNI() -> k
+    void onDetachedFromJNI() -> l
 io.flutter.embedding.engine.dart.DartExecutor$1 -> io.flutter.embedding.engine.e.a$a:
     io.flutter.embedding.engine.dart.DartExecutor this$0 -> a
     void onMessage(java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
@@ -1259,7 +1262,8 @@ io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint -> io.flutter.embed
 io.flutter.embedding.engine.dart.DartExecutor$DefaultBinaryMessenger -> io.flutter.embedding.engine.e.a$c:
     io.flutter.embedding.engine.dart.DartMessenger messenger -> a
     void send(java.lang.String,java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
-    void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler) -> d
+    void send(java.lang.String,java.nio.ByteBuffer) -> b
+    void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler) -> e
 io.flutter.embedding.engine.dart.DartExecutor$IsolateServiceIdListener -> io.flutter.embedding.engine.e.a$d:
     void onIsolateServiceIdAvailable(java.lang.String) -> a
 io.flutter.embedding.engine.dart.DartMessenger -> io.flutter.embedding.engine.e.b:
@@ -1268,18 +1272,19 @@ io.flutter.embedding.engine.dart.DartMessenger -> io.flutter.embedding.engine.e.
     java.util.Map pendingReplies -> c
     int nextReplyId -> d
     void send(java.lang.String,java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
-    void handlePlatformMessageResponse(int,byte[]) -> b
-    void handleMessageFromDart(java.lang.String,byte[],int) -> c
-    void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler) -> d
-    void handleError(java.lang.Error) -> e
+    void send(java.lang.String,java.nio.ByteBuffer) -> b
+    void handlePlatformMessageResponse(int,byte[]) -> c
+    void handleMessageFromDart(java.lang.String,byte[],int) -> d
+    void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler) -> e
+    void handleError(java.lang.Error) -> f
 io.flutter.embedding.engine.dart.DartMessenger$Reply -> io.flutter.embedding.engine.e.b$a:
     io.flutter.embedding.engine.FlutterJNI flutterJNI -> a
     java.util.concurrent.atomic.AtomicBoolean done -> c
     int replyId -> b
     void reply(java.nio.ByteBuffer) -> a
 io.flutter.embedding.engine.dart.PlatformMessageHandler -> io.flutter.embedding.engine.e.c:
-    void handlePlatformMessageResponse(int,byte[]) -> b
-    void handleMessageFromDart(java.lang.String,byte[],int) -> c
+    void handlePlatformMessageResponse(int,byte[]) -> c
+    void handleMessageFromDart(java.lang.String,byte[],int) -> d
 io.flutter.embedding.engine.deferredcomponents.DeferredComponentManager -> io.flutter.embedding.engine.f.a:
     java.lang.String getDeferredComponentInstallState(int,java.lang.String) -> a
     void installDeferredComponent(int,java.lang.String) -> b
@@ -1316,9 +1321,11 @@ io.flutter.embedding.engine.loader.FlutterLoader -> io.flutter.embedding.engine.
     io.flutter.embedding.engine.FlutterJNI access$100(io.flutter.embedding.engine.loader.FlutterLoader) -> b
     void ensureInitializationComplete(android.content.Context,java.lang.String[]) -> c
     java.lang.String findAppBundlePath() -> d
-    io.flutter.embedding.engine.loader.ResourceExtractor initResources(android.content.Context) -> e
-    void startInitialization(android.content.Context) -> f
-    void startInitialization(android.content.Context,io.flutter.embedding.engine.loader.FlutterLoader$Settings) -> g
+    java.lang.String fullAssetPathFrom(java.lang.String) -> e
+    java.lang.String getLookupKeyForAsset(java.lang.String) -> f
+    io.flutter.embedding.engine.loader.ResourceExtractor initResources(android.content.Context) -> g
+    void startInitialization(android.content.Context) -> h
+    void startInitialization(android.content.Context,io.flutter.embedding.engine.loader.FlutterLoader$Settings) -> i
 io.flutter.embedding.engine.loader.FlutterLoader$1 -> io.flutter.embedding.engine.g.c$a:
     android.content.Context val$appContext -> a
     io.flutter.embedding.engine.loader.FlutterLoader this$0 -> b
@@ -1353,19 +1360,23 @@ io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack$FlutterMutatorTyp
     io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack$FlutterMutatorType CLIP_RRECT -> b
     io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack$FlutterMutatorType CLIP_PATH -> c
 io.flutter.embedding.engine.plugins.FlutterPlugin -> io.flutter.embedding.engine.h.a:
-    void onDetachedFromEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> f
-    void onAttachedToEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> h
+    void onDetachedFromEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> h
+    void onAttachedToEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> j
 io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterAssets -> io.flutter.embedding.engine.h.a$a:
 io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding -> io.flutter.embedding.engine.h.a$b:
-    io.flutter.plugin.common.BinaryMessenger binaryMessenger -> a
-    io.flutter.plugin.common.BinaryMessenger getBinaryMessenger() -> a
+    android.content.Context applicationContext -> a
+    io.flutter.view.TextureRegistry textureRegistry -> c
+    io.flutter.plugin.common.BinaryMessenger binaryMessenger -> b
+    android.content.Context getApplicationContext() -> a
+    io.flutter.plugin.common.BinaryMessenger getBinaryMessenger() -> b
+    io.flutter.view.TextureRegistry getTextureRegistry() -> c
 io.flutter.embedding.engine.plugins.PluginRegistry -> io.flutter.embedding.engine.h.b:
     void add(io.flutter.embedding.engine.plugins.FlutterPlugin) -> i
 io.flutter.embedding.engine.plugins.activity.ActivityAware -> io.flutter.embedding.engine.h.c.a:
     void onDetachedFromActivity() -> c
-    void onAttachedToActivity(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> d
-    void onReattachedToActivityForConfigChanges(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> e
-    void onDetachedFromActivityForConfigChanges() -> g
+    void onAttachedToActivity(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> e
+    void onReattachedToActivityForConfigChanges(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> f
+    void onDetachedFromActivityForConfigChanges() -> i
 io.flutter.embedding.engine.plugins.activity.ActivityControlSurface -> io.flutter.embedding.engine.h.c.b:
     boolean onRequestPermissionsResult(int,java.lang.String[],int[]) -> a
     void onRestoreInstanceState(android.os.Bundle) -> b
@@ -1409,11 +1420,11 @@ io.flutter.embedding.engine.plugins.shim.ShimPluginRegistry$ShimRegistrarAggrega
     java.util.Set shimRegistrars -> a
     void addPlugin(io.flutter.embedding.engine.plugins.shim.ShimRegistrar) -> a
     void onDetachedFromActivity() -> c
-    void onAttachedToActivity(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> d
-    void onReattachedToActivityForConfigChanges(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> e
-    void onDetachedFromEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> f
-    void onDetachedFromActivityForConfigChanges() -> g
-    void onAttachedToEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> h
+    void onAttachedToActivity(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> e
+    void onReattachedToActivityForConfigChanges(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> f
+    void onDetachedFromEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> h
+    void onDetachedFromActivityForConfigChanges() -> i
+    void onAttachedToEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> j
 io.flutter.embedding.engine.plugins.shim.ShimRegistrar -> io.flutter.embedding.engine.h.g.b:
     java.util.Set activityResultListeners -> c
     java.util.Set newIntentListeners -> d
@@ -1425,13 +1436,15 @@ io.flutter.embedding.engine.plugins.shim.ShimRegistrar -> io.flutter.embedding.e
     io.flutter.plugin.common.BinaryMessenger messenger() -> a
     io.flutter.plugin.common.PluginRegistry$Registrar addRequestPermissionsResultListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener) -> b
     void onDetachedFromActivity() -> c
-    void onAttachedToActivity(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> d
-    void onReattachedToActivityForConfigChanges(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> e
-    void onDetachedFromEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> f
-    void onDetachedFromActivityForConfigChanges() -> g
-    void onAttachedToEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> h
-    android.app.Activity activity() -> i
-    void addExistingListenersToActivityPluginBinding() -> j
+    android.content.Context context() -> d
+    void onAttachedToActivity(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> e
+    void onReattachedToActivityForConfigChanges(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> f
+    java.lang.String lookupKeyForAsset(java.lang.String) -> g
+    void onDetachedFromEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> h
+    void onDetachedFromActivityForConfigChanges() -> i
+    void onAttachedToEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> j
+    android.app.Activity activity() -> k
+    void addExistingListenersToActivityPluginBinding() -> l
 io.flutter.embedding.engine.plugins.util.GeneratedPluginRegister -> io.flutter.embedding.engine.h.h.a:
     void registerGeneratedPlugins(io.flutter.embedding.engine.FlutterEngine) -> a
 io.flutter.embedding.engine.renderer.FlutterRenderer -> io.flutter.embedding.engine.renderer.a:
@@ -1735,8 +1748,8 @@ io.flutter.embedding.engine.systemchannels.RestorationChannel -> io.flutter.embe
 io.flutter.embedding.engine.systemchannels.RestorationChannel$1 -> io.flutter.embedding.engine.i.k$a:
     byte[] val$data -> a
     io.flutter.embedding.engine.systemchannels.RestorationChannel this$0 -> b
-    void error(java.lang.String,java.lang.String,java.lang.Object) -> a
-    void success(java.lang.Object) -> b
+    void success(java.lang.Object) -> a
+    void error(java.lang.String,java.lang.String,java.lang.Object) -> b
     void notImplemented() -> c
 io.flutter.embedding.engine.systemchannels.RestorationChannel$2 -> io.flutter.embedding.engine.i.k$b:
     io.flutter.embedding.engine.systemchannels.RestorationChannel this$0 -> a
@@ -1872,19 +1885,46 @@ io.flutter.plugin.common.BasicMessageChannel$Reply -> d.a.c.a.a$e:
     void reply(java.lang.Object) -> a
 io.flutter.plugin.common.BinaryMessenger -> d.a.c.a.b:
     void send(java.lang.String,java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
-    void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler) -> d
+    void send(java.lang.String,java.nio.ByteBuffer) -> b
+    void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler) -> e
 io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler -> d.a.c.a.b$a:
     void onMessage(java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
 io.flutter.plugin.common.BinaryMessenger$BinaryReply -> d.a.c.a.b$b:
     void reply(java.nio.ByteBuffer) -> a
-io.flutter.plugin.common.FlutterException -> d.a.c.a.c:
+io.flutter.plugin.common.EventChannel -> d.a.c.a.c:
+    io.flutter.plugin.common.MethodCodec codec -> c
+    io.flutter.plugin.common.BinaryMessenger messenger -> a
+    java.lang.String name -> b
+    io.flutter.plugin.common.MethodCodec access$000(io.flutter.plugin.common.EventChannel) -> a
+    java.lang.String access$200(io.flutter.plugin.common.EventChannel) -> b
+    io.flutter.plugin.common.BinaryMessenger access$400(io.flutter.plugin.common.EventChannel) -> c
+    void setStreamHandler(io.flutter.plugin.common.EventChannel$StreamHandler) -> d
+io.flutter.plugin.common.EventChannel$1 -> d.a.c.a.c$a:
+io.flutter.plugin.common.EventChannel$EventSink -> d.a.c.a.c$b:
+    void success(java.lang.Object) -> a
+io.flutter.plugin.common.EventChannel$IncomingStreamRequestHandler -> d.a.c.a.c$c:
+    io.flutter.plugin.common.EventChannel this$0 -> c
+    java.util.concurrent.atomic.AtomicReference activeSink -> b
+    io.flutter.plugin.common.EventChannel$StreamHandler handler -> a
+    void onMessage(java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
+    java.util.concurrent.atomic.AtomicReference access$300(io.flutter.plugin.common.EventChannel$IncomingStreamRequestHandler) -> b
+    void onCancel(java.lang.Object,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> c
+    void onListen(java.lang.Object,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> d
+io.flutter.plugin.common.EventChannel$IncomingStreamRequestHandler$EventSinkImplementation -> d.a.c.a.c$c$a:
+    io.flutter.plugin.common.EventChannel$IncomingStreamRequestHandler this$1 -> b
+    java.util.concurrent.atomic.AtomicBoolean hasEnded -> a
+    void success(java.lang.Object) -> a
+io.flutter.plugin.common.EventChannel$StreamHandler -> d.a.c.a.c$d:
+    void onCancel(java.lang.Object) -> a
+    void onListen(java.lang.Object,io.flutter.plugin.common.EventChannel$EventSink) -> b
+io.flutter.plugin.common.FlutterException -> d.a.c.a.d:
     java.lang.Object details -> b
     java.lang.String code -> a
-io.flutter.plugin.common.JSONMessageCodec -> d.a.c.a.d:
+io.flutter.plugin.common.JSONMessageCodec -> d.a.c.a.e:
     io.flutter.plugin.common.JSONMessageCodec INSTANCE -> a
     java.lang.Object decodeMessage(java.nio.ByteBuffer) -> a
     java.nio.ByteBuffer encodeMessage(java.lang.Object) -> b
-io.flutter.plugin.common.JSONMethodCodec -> d.a.c.a.e:
+io.flutter.plugin.common.JSONMethodCodec -> d.a.c.a.f:
     io.flutter.plugin.common.JSONMethodCodec INSTANCE -> a
     java.nio.ByteBuffer encodeErrorEnvelopeWithStacktrace(java.lang.String,java.lang.String,java.lang.Object,java.lang.String) -> a
     java.nio.ByteBuffer encodeMethodCall(io.flutter.plugin.common.MethodCall) -> b
@@ -1893,17 +1933,17 @@ io.flutter.plugin.common.JSONMethodCodec -> d.a.c.a.e:
     io.flutter.plugin.common.MethodCall decodeMethodCall(java.nio.ByteBuffer) -> e
     java.lang.Object decodeEnvelope(java.nio.ByteBuffer) -> f
     java.lang.Object unwrapNull(java.lang.Object) -> g
-io.flutter.plugin.common.JSONUtil -> d.a.c.a.f:
+io.flutter.plugin.common.JSONUtil -> d.a.c.a.g:
     java.lang.Object wrap(java.lang.Object) -> a
-io.flutter.plugin.common.MessageCodec -> d.a.c.a.g:
+io.flutter.plugin.common.MessageCodec -> d.a.c.a.h:
     java.lang.Object decodeMessage(java.nio.ByteBuffer) -> a
     java.nio.ByteBuffer encodeMessage(java.lang.Object) -> b
-io.flutter.plugin.common.MethodCall -> d.a.c.a.h:
+io.flutter.plugin.common.MethodCall -> d.a.c.a.i:
     java.lang.Object arguments -> b
     java.lang.String method -> a
     java.lang.Object argument(java.lang.String) -> a
     java.lang.Object arguments() -> b
-io.flutter.plugin.common.MethodChannel -> d.a.c.a.i:
+io.flutter.plugin.common.MethodChannel -> d.a.c.a.j:
     io.flutter.plugin.common.MethodCodec codec -> c
     io.flutter.plugin.common.BinaryMessenger messenger -> a
     java.lang.String name -> b
@@ -1912,49 +1952,51 @@ io.flutter.plugin.common.MethodChannel -> d.a.c.a.i:
     void invokeMethod(java.lang.String,java.lang.Object) -> c
     void invokeMethod(java.lang.String,java.lang.Object,io.flutter.plugin.common.MethodChannel$Result) -> d
     void setMethodCallHandler(io.flutter.plugin.common.MethodChannel$MethodCallHandler) -> e
-io.flutter.plugin.common.MethodChannel$IncomingMethodCallHandler -> d.a.c.a.i$a:
+io.flutter.plugin.common.MethodChannel$IncomingMethodCallHandler -> d.a.c.a.j$a:
     io.flutter.plugin.common.MethodChannel$MethodCallHandler handler -> a
     io.flutter.plugin.common.MethodChannel this$0 -> b
     void onMessage(java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
     java.lang.String getStackTrace(java.lang.Exception) -> b
-io.flutter.plugin.common.MethodChannel$IncomingMethodCallHandler$1 -> d.a.c.a.i$a$a:
+io.flutter.plugin.common.MethodChannel$IncomingMethodCallHandler$1 -> d.a.c.a.j$a$a:
     io.flutter.plugin.common.BinaryMessenger$BinaryReply val$reply -> a
     io.flutter.plugin.common.MethodChannel$IncomingMethodCallHandler this$1 -> b
-    void error(java.lang.String,java.lang.String,java.lang.Object) -> a
-    void success(java.lang.Object) -> b
+    void success(java.lang.Object) -> a
+    void error(java.lang.String,java.lang.String,java.lang.Object) -> b
     void notImplemented() -> c
-io.flutter.plugin.common.MethodChannel$IncomingResultHandler -> d.a.c.a.i$b:
+io.flutter.plugin.common.MethodChannel$IncomingResultHandler -> d.a.c.a.j$b:
     io.flutter.plugin.common.MethodChannel$Result callback -> a
     io.flutter.plugin.common.MethodChannel this$0 -> b
     void reply(java.nio.ByteBuffer) -> a
-io.flutter.plugin.common.MethodChannel$MethodCallHandler -> d.a.c.a.i$c:
+io.flutter.plugin.common.MethodChannel$MethodCallHandler -> d.a.c.a.j$c:
     void onMethodCall(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> b
-io.flutter.plugin.common.MethodChannel$Result -> d.a.c.a.i$d:
-    void error(java.lang.String,java.lang.String,java.lang.Object) -> a
-    void success(java.lang.Object) -> b
+io.flutter.plugin.common.MethodChannel$Result -> d.a.c.a.j$d:
+    void success(java.lang.Object) -> a
+    void error(java.lang.String,java.lang.String,java.lang.Object) -> b
     void notImplemented() -> c
-io.flutter.plugin.common.MethodCodec -> d.a.c.a.j:
+io.flutter.plugin.common.MethodCodec -> d.a.c.a.k:
     java.nio.ByteBuffer encodeErrorEnvelopeWithStacktrace(java.lang.String,java.lang.String,java.lang.Object,java.lang.String) -> a
     java.nio.ByteBuffer encodeMethodCall(io.flutter.plugin.common.MethodCall) -> b
     java.nio.ByteBuffer encodeErrorEnvelope(java.lang.String,java.lang.String,java.lang.Object) -> c
     java.nio.ByteBuffer encodeSuccessEnvelope(java.lang.Object) -> d
     io.flutter.plugin.common.MethodCall decodeMethodCall(java.nio.ByteBuffer) -> e
     java.lang.Object decodeEnvelope(java.nio.ByteBuffer) -> f
-io.flutter.plugin.common.PluginRegistry$ActivityResultListener -> d.a.c.a.k:
+io.flutter.plugin.common.PluginRegistry$ActivityResultListener -> d.a.c.a.l:
     boolean onActivityResult(int,int,android.content.Intent) -> c
-io.flutter.plugin.common.PluginRegistry$NewIntentListener -> d.a.c.a.l:
+io.flutter.plugin.common.PluginRegistry$NewIntentListener -> d.a.c.a.m:
     boolean onNewIntent(android.content.Intent) -> d
-io.flutter.plugin.common.PluginRegistry$Registrar -> d.a.c.a.m:
+io.flutter.plugin.common.PluginRegistry$Registrar -> d.a.c.a.n:
     io.flutter.plugin.common.BinaryMessenger messenger() -> a
     io.flutter.plugin.common.PluginRegistry$Registrar addRequestPermissionsResultListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener) -> b
-    android.app.Activity activity() -> i
-io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener -> d.a.c.a.n:
+    android.content.Context context() -> d
+    java.lang.String lookupKeyForAsset(java.lang.String) -> g
+    android.app.Activity activity() -> k
+io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener -> d.a.c.a.o:
     boolean onRequestPermissionsResult(int,java.lang.String[],int[]) -> a
-io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener -> d.a.c.a.o:
+io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener -> d.a.c.a.p:
     void onUserLeaveHint() -> f
-io.flutter.plugin.common.PluginRegistry$ViewDestroyListener -> d.a.c.a.p:
+io.flutter.plugin.common.PluginRegistry$ViewDestroyListener -> d.a.c.a.q:
     boolean onViewDestroy(io.flutter.view.FlutterNativeView) -> a
-io.flutter.plugin.common.StandardMessageCodec -> d.a.c.a.q:
+io.flutter.plugin.common.StandardMessageCodec -> d.a.c.a.r:
     java.nio.charset.Charset UTF8 -> c
     io.flutter.plugin.common.StandardMessageCodec INSTANCE -> a
     boolean LITTLE_ENDIAN -> b
@@ -1973,9 +2015,9 @@ io.flutter.plugin.common.StandardMessageCodec -> d.a.c.a.q:
     void writeLong(java.io.ByteArrayOutputStream,long) -> m
     void writeSize(java.io.ByteArrayOutputStream,int) -> n
     void writeValue(java.io.ByteArrayOutputStream,java.lang.Object) -> o
-io.flutter.plugin.common.StandardMessageCodec$ExposedByteArrayOutputStream -> d.a.c.a.q$a:
+io.flutter.plugin.common.StandardMessageCodec$ExposedByteArrayOutputStream -> d.a.c.a.r$a:
     byte[] buffer() -> a
-io.flutter.plugin.common.StandardMethodCodec -> d.a.c.a.r:
+io.flutter.plugin.common.StandardMethodCodec -> d.a.c.a.s:
     io.flutter.plugin.common.StandardMessageCodec messageCodec -> a
     io.flutter.plugin.common.StandardMethodCodec INSTANCE -> b
     java.nio.ByteBuffer encodeErrorEnvelopeWithStacktrace(java.lang.String,java.lang.String,java.lang.Object,java.lang.String) -> a
@@ -1985,7 +2027,7 @@ io.flutter.plugin.common.StandardMethodCodec -> d.a.c.a.r:
     io.flutter.plugin.common.MethodCall decodeMethodCall(java.nio.ByteBuffer) -> e
     java.lang.Object decodeEnvelope(java.nio.ByteBuffer) -> f
     java.lang.String getStackTrace(java.lang.Throwable) -> g
-io.flutter.plugin.common.StringCodec -> d.a.c.a.s:
+io.flutter.plugin.common.StringCodec -> d.a.c.a.t:
     java.nio.charset.Charset UTF8 -> a
     io.flutter.plugin.common.StringCodec INSTANCE -> b
     java.lang.Object decodeMessage(java.nio.ByteBuffer) -> a
@@ -2379,6 +2421,428 @@ io.flutter.plugin.platform.VirtualDisplayController$OneTimeOnDrawListener -> io.
     void schedule(android.view.View,java.lang.Runnable) -> a
 io.flutter.plugin.platform.VirtualDisplayController$OneTimeOnDrawListener$1 -> io.flutter.plugin.platform.k$b$a:
     io.flutter.plugin.platform.VirtualDisplayController$OneTimeOnDrawListener this$0 -> a
+io.flutter.plugins.camera.-$$Lambda$Camera$1TwcVOTXmyknHrz8TvpnZ6dCbFY -> io.flutter.plugins.a.a:
+    io.flutter.plugins.camera.Camera f$0 -> a
+    void onError(java.lang.String,java.lang.String) -> a
+io.flutter.plugins.camera.-$$Lambda$Camera$2$cMc8E_yGhF_4_XK7eEob2cVXELE -> io.flutter.plugins.a.b:
+    io.flutter.plugins.camera.Camera$2 f$0 -> a
+    void onError(java.lang.String,java.lang.String) -> a
+io.flutter.plugins.camera.-$$Lambda$Camera$5$2friwKevxlB9FgCb4PqBGItI6uk -> io.flutter.plugins.a.c:
+    io.flutter.plugin.common.MethodChannel$Result f$0 -> a
+    void onError(java.lang.String,java.lang.String) -> a
+io.flutter.plugins.camera.-$$Lambda$Camera$5$4HKMicOKmUQtXciY56VPIFfbai0 -> io.flutter.plugins.a.d:
+    io.flutter.plugins.camera.Camera$5 f$0 -> a
+    io.flutter.plugin.common.MethodChannel$Result f$1 -> b
+io.flutter.plugins.camera.-$$Lambda$Camera$CVB4RKerhgaaJTA5AC4mx0U57CY -> io.flutter.plugins.a.e:
+    io.flutter.plugin.common.MethodChannel$Result f$0 -> a
+    void onError(java.lang.String,java.lang.String) -> a
+io.flutter.plugins.camera.-$$Lambda$Camera$NR4thMwxNADE70m72dpVKi1LMu8 -> io.flutter.plugins.a.f:
+    io.flutter.plugins.camera.Camera f$0 -> a
+    void onError(java.lang.String,java.lang.String) -> a
+io.flutter.plugins.camera.-$$Lambda$Camera$RERH6gL-pb8ctG95hvCClwROkAU -> io.flutter.plugins.a.g:
+    io.flutter.plugin.common.EventChannel$EventSink f$0 -> a
+io.flutter.plugins.camera.-$$Lambda$Camera$RR5vfnuMftwCTcfbV8cBiV8cC9M -> io.flutter.plugins.a.h:
+    io.flutter.plugins.camera.Camera f$0 -> a
+io.flutter.plugins.camera.-$$Lambda$Camera$Vh4sWYVCSGCovpiSX8yyTzTW4Qk -> io.flutter.plugins.a.i:
+    io.flutter.plugins.camera.-$$Lambda$Camera$Vh4sWYVCSGCovpiSX8yyTzTW4Qk INSTANCE -> a
+io.flutter.plugins.camera.-$$Lambda$Camera$_kOqH7wBtAs3nshW6N0Jg3hhAbE -> io.flutter.plugins.a.j:
+    io.flutter.plugin.common.MethodChannel$Result f$0 -> a
+    void onError(java.lang.String,java.lang.String) -> a
+io.flutter.plugins.camera.-$$Lambda$Camera$fJjC5NZhUKdHpl-lOAYK6nY0Pt4 -> io.flutter.plugins.a.k:
+    io.flutter.plugins.camera.Camera f$0 -> a
+    void onError(java.lang.String,java.lang.String) -> a
+io.flutter.plugins.camera.-$$Lambda$Camera$j8vJuNR1i2nUtYet1IDipVVP6ns -> io.flutter.plugins.a.l:
+    io.flutter.plugin.common.MethodChannel$Result f$0 -> a
+    void onError(java.lang.String,java.lang.String) -> a
+io.flutter.plugins.camera.-$$Lambda$Camera$kcune_EGPmGzn_gIPlRbYzXLLZY -> io.flutter.plugins.a.m:
+    io.flutter.plugin.common.MethodChannel$Result f$0 -> a
+io.flutter.plugins.camera.-$$Lambda$Camera$o5IqujsC39wH618vp5Hl1K-vpjI -> io.flutter.plugins.a.n:
+    java.io.File f$1 -> b
+    io.flutter.plugins.camera.Camera f$0 -> a
+io.flutter.plugins.camera.-$$Lambda$Camera$u4dtrlHzEWvu3rdqnzUraCMNXcs -> io.flutter.plugins.a.o:
+    io.flutter.plugin.common.MethodChannel$Result f$0 -> a
+io.flutter.plugins.camera.-$$Lambda$Camera$zkebtvxcDEAyjODToEcKZq3CD4M -> io.flutter.plugins.a.p:
+    io.flutter.plugins.camera.Camera f$0 -> a
+io.flutter.plugins.camera.-$$Lambda$CameraPermissions$IhmZy8WSUCwcg_h9O1MddE1ucIA -> io.flutter.plugins.a.q:
+    io.flutter.plugins.camera.CameraPermissions$ResultCallback f$1 -> b
+    io.flutter.plugins.camera.CameraPermissions f$0 -> a
+    void onResult(java.lang.String,java.lang.String) -> a
+io.flutter.plugins.camera.-$$Lambda$MethodCallHandlerImpl$kQOHgMggqzdMNqkzF-YukQrdRi8 -> io.flutter.plugins.a.r:
+    io.flutter.plugins.camera.MethodCallHandlerImpl f$0 -> a
+    io.flutter.plugin.common.MethodCall f$1 -> b
+    io.flutter.plugin.common.MethodChannel$Result f$2 -> c
+    void onResult(java.lang.String,java.lang.String) -> a
+io.flutter.plugins.camera.-$$Lambda$Vf2JLpSWIioZM6xM0Zq7C88SFaA -> io.flutter.plugins.a.s:
+    io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding f$0 -> a
+    void addListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener) -> a
+io.flutter.plugins.camera.Camera -> io.flutter.plugins.a.t:
+    java.lang.String cameraName -> f
+    android.hardware.camera2.CameraCharacteristics cameraCharacteristics -> n
+    java.util.HashMap supportedImageFormats -> H
+    boolean enableAudio -> i
+    long preCaptureStartTime -> F
+    io.flutter.plugins.camera.types.FlashMode flashMode -> w
+    boolean recordingVideo -> u
+    android.hardware.camera2.CameraDevice cameraDevice -> o
+    android.hardware.camera2.CameraManager cameraManager -> b
+    android.media.MediaRecorder mediaRecorder -> t
+    java.io.File videoRecordingFile -> v
+    android.util.Range fpsRange -> D
+    io.flutter.plugins.camera.DartMessenger dartMessenger -> l
+    io.flutter.plugins.camera.types.ExposureMode exposureMode -> x
+    android.util.Size previewSize -> h
+    io.flutter.plugins.camera.CameraZoom cameraZoom -> m
+    io.flutter.plugins.camera.types.FocusMode focusMode -> y
+    android.media.ImageReader imageStreamReader -> r
+    io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation lockedCaptureOrientation -> E
+    boolean useAutoFocus -> C
+    boolean isFrontFacing -> d
+    io.flutter.plugins.camera.PictureCaptureRequest pictureCaptureRequest -> z
+    android.hardware.camera2.CameraCaptureSession cameraCaptureSession -> p
+    android.media.CamcorderProfile recordingProfile -> k
+    io.flutter.plugins.camera.CameraRegions cameraRegions -> A
+    int sensorOrientation -> e
+    android.content.Context applicationContext -> j
+    int exposureOffset -> B
+    io.flutter.view.TextureRegistry$SurfaceTextureEntry flutterTexture -> a
+    android.hardware.camera2.CameraCaptureSession$CaptureCallback pictureCaptureCallback -> G
+    io.flutter.plugins.camera.DeviceOrientationManager deviceOrientationListener -> c
+    android.hardware.camera2.CaptureRequest$Builder captureRequestBuilder -> s
+    android.util.Size captureSize -> g
+    android.media.ImageReader pictureImageReader -> q
+    void createCaptureSession(int,android.view.Surface[]) -> A
+    void startPreview() -> A0
+    void createCaptureSession(java.util.List,android.hardware.camera2.CameraCaptureSession$StateCallback) -> B
+    void startPreviewWithImageStream(io.flutter.plugin.common.EventChannel) -> B0
+    void createCaptureSessionWithSessionConfig(java.util.List,android.hardware.camera2.CameraCaptureSession$StateCallback) -> C
+    void startVideoRecording(io.flutter.plugin.common.MethodChannel$Result) -> C0
+    void dispose() -> D
+    void stopVideoRecording(io.flutter.plugin.common.MethodChannel$Result) -> D0
+    double getExposureOffsetStepSize() -> E
+    boolean supportsDistortionCorrection() -> E0
+    double getMaxExposureOffset() -> F
+    void takePicture(io.flutter.plugin.common.MethodChannel$Result) -> F0
+    float getMaxZoomLevel() -> G
+    void unlockAutoFocus() -> G0
+    double getMinExposureOffset() -> H
+    void unlockCaptureOrientation() -> H0
+    float getMinZoomLevel() -> I
+    void updateExposure(io.flutter.plugins.camera.types.ExposureMode) -> I0
+    android.util.Size getRegionBoundaries() -> J
+    void updateFlash(io.flutter.plugins.camera.types.FlashMode) -> J0
+    boolean hitPreCaptureTimeout() -> K
+    void updateFocus(io.flutter.plugins.camera.types.FocusMode) -> K0
+    void initFps(android.hardware.camera2.CameraCharacteristics) -> L
+    void updateFpsRange() -> L0
+    boolean isExposurePointSupported() -> M
+    void writeToFile(java.nio.ByteBuffer,java.io.File) -> M0
+    boolean isFocusPointSupported() -> N
+    void lambda$lockAutoFocus$3(java.lang.String,java.lang.String) -> O
+    void lambda$lockAutoFocus$3$Camera(java.lang.String,java.lang.String) -> P
+    void lambda$runPicturePreCapture$1() -> Q
+    void lambda$runPicturePreCapture$1$Camera() -> R
+    void lambda$runPicturePreCapture$2(java.lang.String,java.lang.String) -> S
+    void lambda$runPicturePreCapture$2$Camera(java.lang.String,java.lang.String) -> T
+    void lambda$setExposurePoint$8(io.flutter.plugin.common.MethodChannel$Result) -> U
+    void lambda$setExposurePoint$9(io.flutter.plugin.common.MethodChannel$Result,java.lang.String,java.lang.String) -> V
+    void lambda$setFlashMode$6(io.flutter.plugin.common.MethodChannel$Result) -> W
+    void lambda$setFlashMode$7(io.flutter.plugin.common.MethodChannel$Result,java.lang.String,java.lang.String) -> X
+    void lambda$setFocusMode$10(io.flutter.plugin.common.MethodChannel$Result,java.lang.String,java.lang.String) -> Y
+    void lambda$setImageStreamImageAvailableListener$12(io.flutter.plugin.common.EventChannel$EventSink,android.media.ImageReader) -> Z
+    android.hardware.camera2.CameraDevice access$000(io.flutter.plugins.camera.Camera) -> a
+    void lambda$startVideoRecording$5() -> a0
+    android.hardware.camera2.CameraDevice access$002(io.flutter.plugins.camera.Camera,android.hardware.camera2.CameraDevice) -> b
+    void lambda$startVideoRecording$5$Camera() -> b0
+    android.util.Size access$100(io.flutter.plugins.camera.Camera) -> c
+    boolean lambda$supportsDistortionCorrection$11(int) -> c0
+    io.flutter.plugins.camera.types.FlashMode access$1000(io.flutter.plugins.camera.Camera) -> d
+    void lambda$takePicture$0(java.io.File,android.media.ImageReader) -> d0
+    void access$1100(io.flutter.plugins.camera.Camera,io.flutter.plugins.camera.types.FlashMode) -> e
+    void lambda$takePicture$0$Camera(java.io.File,android.media.ImageReader) -> e0
+    void access$1200(io.flutter.plugins.camera.Camera,io.flutter.plugins.camera.types.ExposureMode) -> f
+    void lambda$unlockAutoFocus$4(java.lang.String,java.lang.String) -> f0
+    void access$1300(io.flutter.plugins.camera.Camera,java.lang.Runnable,io.flutter.plugins.camera.ErrorCallback) -> g
+    void lambda$unlockAutoFocus$4$Camera(java.lang.String,java.lang.String) -> g0
+    io.flutter.plugins.camera.PictureCaptureRequest access$1400(io.flutter.plugins.camera.Camera) -> h
+    void lockAutoFocus(android.hardware.camera2.CameraCaptureSession$CaptureCallback) -> h0
+    void access$1500(io.flutter.plugins.camera.Camera) -> i
+    void lockCaptureOrientation(io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation) -> i0
+    void access$1600(io.flutter.plugins.camera.Camera) -> j
+    void open(java.lang.String) -> j0
+    void access$1700(io.flutter.plugins.camera.Camera) -> k
+    void pauseVideoRecording(io.flutter.plugin.common.MethodChannel$Result) -> k0
+    boolean access$1800(io.flutter.plugins.camera.Camera) -> l
+    void prepareMediaRecorder(java.lang.String) -> l0
+    void access$1900(io.flutter.plugins.camera.Camera) -> m
+    void refreshPreviewCaptureSession(java.lang.Runnable,io.flutter.plugins.camera.ErrorCallback) -> m0
+    io.flutter.plugins.camera.types.ExposureMode access$200(io.flutter.plugins.camera.Camera) -> n
+    void resumeVideoRecording(io.flutter.plugin.common.MethodChannel$Result) -> n0
+    void access$2000(io.flutter.plugins.camera.Camera,io.flutter.plugin.common.EventChannel$EventSink) -> o
+    void runPictureAutoFocus() -> o0
+    android.media.ImageReader access$2100(io.flutter.plugins.camera.Camera) -> p
+    void runPictureCapture() -> p0
+    io.flutter.plugins.camera.types.FocusMode access$300(io.flutter.plugins.camera.Camera) -> q
+    void runPicturePreCapture() -> q0
+    boolean access$400(io.flutter.plugins.camera.Camera) -> r
+    void setExposureMode(io.flutter.plugin.common.MethodChannel$Result,io.flutter.plugins.camera.types.ExposureMode) -> r0
+    boolean access$500(io.flutter.plugins.camera.Camera) -> s
+    void setExposureOffset(io.flutter.plugin.common.MethodChannel$Result,double) -> s0
+    io.flutter.plugins.camera.DartMessenger access$600(io.flutter.plugins.camera.Camera) -> t
+    void setExposurePoint(io.flutter.plugin.common.MethodChannel$Result,java.lang.Double,java.lang.Double) -> t0
+    android.hardware.camera2.CameraCaptureSession access$702(io.flutter.plugins.camera.Camera,android.hardware.camera2.CameraCaptureSession) -> u
+    void setFlashMode(io.flutter.plugin.common.MethodChannel$Result,io.flutter.plugins.camera.types.FlashMode) -> u0
+    void access$800(io.flutter.plugins.camera.Camera) -> v
+    void setFocusMode(io.flutter.plugin.common.MethodChannel$Result,io.flutter.plugins.camera.types.FocusMode) -> v0
+    void access$900(io.flutter.plugins.camera.Camera,io.flutter.plugins.camera.types.FocusMode) -> w
+    void setFocusPoint(io.flutter.plugin.common.MethodChannel$Result,java.lang.Double,java.lang.Double) -> w0
+    void close() -> x
+    void setImageStreamImageAvailableListener(io.flutter.plugin.common.EventChannel$EventSink) -> x0
+    void closeCaptureSession() -> y
+    void setPreCaptureStartTime() -> y0
+    void createCaptureSession(int,java.lang.Runnable,android.view.Surface[]) -> z
+    void setZoomLevel(io.flutter.plugin.common.MethodChannel$Result,float) -> z0
+io.flutter.plugins.camera.Camera$1 -> io.flutter.plugins.a.t$a:
+    io.flutter.plugins.camera.Camera this$0 -> a
+io.flutter.plugins.camera.Camera$2 -> io.flutter.plugins.a.t$b:
+    io.flutter.plugins.camera.Camera this$0 -> b
+    java.lang.Runnable val$onSuccessCallback -> a
+    void lambda$onConfigured$0(java.lang.String,java.lang.String) -> a
+    void lambda$onConfigured$0$Camera$2(java.lang.String,java.lang.String) -> b
+io.flutter.plugins.camera.Camera$3 -> io.flutter.plugins.a.t$c:
+    io.flutter.plugins.camera.Camera this$0 -> a
+    void processCapture(android.hardware.camera2.CaptureResult) -> a
+io.flutter.plugins.camera.Camera$4 -> io.flutter.plugins.a.t$d:
+    io.flutter.plugins.camera.Camera this$0 -> a
+io.flutter.plugins.camera.Camera$5 -> io.flutter.plugins.a.t$e:
+    io.flutter.plugins.camera.types.FlashMode val$mode -> b
+    boolean isFinished -> a
+    io.flutter.plugins.camera.Camera this$0 -> d
+    io.flutter.plugin.common.MethodChannel$Result val$result -> c
+    void lambda$onCaptureCompleted$0(io.flutter.plugin.common.MethodChannel$Result) -> a
+    void lambda$onCaptureCompleted$0$Camera$5(io.flutter.plugin.common.MethodChannel$Result) -> b
+    void lambda$onCaptureCompleted$1(io.flutter.plugin.common.MethodChannel$Result,java.lang.String,java.lang.String) -> c
+io.flutter.plugins.camera.Camera$6 -> io.flutter.plugins.a.t$f:
+    io.flutter.plugins.camera.Camera this$0 -> a
+io.flutter.plugins.camera.Camera$7 -> io.flutter.plugins.a.t$g:
+    io.flutter.plugins.camera.Camera this$0 -> a
+    void onCancel(java.lang.Object) -> a
+    void onListen(java.lang.Object,io.flutter.plugin.common.EventChannel$EventSink) -> b
+io.flutter.plugins.camera.Camera$8 -> io.flutter.plugins.a.t$h:
+    int[] $SwitchMap$io$flutter$plugins$camera$types$FlashMode -> b
+    int[] $SwitchMap$io$flutter$plugins$camera$types$FocusMode -> c
+    int[] $SwitchMap$io$flutter$plugins$camera$types$ExposureMode -> d
+    int[] $SwitchMap$io$flutter$plugins$camera$PictureCaptureRequest$State -> a
+io.flutter.plugins.camera.CameraPermissions -> io.flutter.plugins.a.u:
+    boolean ongoing -> a
+    boolean hasAudioPermission(android.app.Activity) -> a
+    boolean hasCameraPermission(android.app.Activity) -> b
+    void lambda$requestPermissions$0(io.flutter.plugins.camera.CameraPermissions$ResultCallback,java.lang.String,java.lang.String) -> c
+    void lambda$requestPermissions$0$CameraPermissions(io.flutter.plugins.camera.CameraPermissions$ResultCallback,java.lang.String,java.lang.String) -> d
+    void requestPermissions(android.app.Activity,io.flutter.plugins.camera.CameraPermissions$PermissionsRegistry,boolean,io.flutter.plugins.camera.CameraPermissions$ResultCallback) -> e
+io.flutter.plugins.camera.CameraPermissions$CameraRequestPermissionsListener -> io.flutter.plugins.a.u$a:
+    io.flutter.plugins.camera.CameraPermissions$ResultCallback callback -> b
+    boolean alreadyCalled -> a
+    boolean onRequestPermissionsResult(int,java.lang.String[],int[]) -> a
+io.flutter.plugins.camera.CameraPermissions$PermissionsRegistry -> io.flutter.plugins.a.u$b:
+    void addListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener) -> a
+io.flutter.plugins.camera.CameraPermissions$ResultCallback -> io.flutter.plugins.a.u$c:
+    void onResult(java.lang.String,java.lang.String) -> a
+io.flutter.plugins.camera.CameraPlugin -> io.flutter.plugins.a.v:
+    io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding flutterPluginBinding -> a
+    io.flutter.plugins.camera.MethodCallHandlerImpl methodCallHandler -> b
+    void maybeStartListening(android.app.Activity,io.flutter.plugin.common.BinaryMessenger,io.flutter.plugins.camera.CameraPermissions$PermissionsRegistry,io.flutter.view.TextureRegistry) -> a
+    void onDetachedFromActivity() -> c
+    void onAttachedToActivity(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> e
+    void onReattachedToActivityForConfigChanges(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding) -> f
+    void onDetachedFromEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> h
+    void onDetachedFromActivityForConfigChanges() -> i
+    void onAttachedToEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding) -> j
+io.flutter.plugins.camera.CameraRegions -> io.flutter.plugins.a.w:
+    android.hardware.camera2.params.MeteringRectangle aeMeteringRectangle -> a
+    android.hardware.camera2.params.MeteringRectangle afMeteringRectangle -> b
+    android.util.Size maxBoundaries -> c
+    android.hardware.camera2.params.MeteringRectangle getAEMeteringRectangle() -> a
+    android.hardware.camera2.params.MeteringRectangle getAFMeteringRectangle() -> b
+    android.util.Size getMaxBoundaries() -> c
+    android.hardware.camera2.params.MeteringRectangle getMeteringRectangleForPoint(android.util.Size,double,double) -> d
+    void resetAutoExposureMeteringRectangle() -> e
+    void resetAutoFocusMeteringRectangle() -> f
+    void setAutoExposureMeteringRectangleFromPoint(double,double) -> g
+    void setAutoFocusMeteringRectangleFromPoint(double,double) -> h
+io.flutter.plugins.camera.CameraUtils -> io.flutter.plugins.a.x:
+    android.util.Size computeBestPreviewSize(java.lang.String,io.flutter.plugins.camera.types.ResolutionPreset) -> a
+    io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation deserializeDeviceOrientation(java.lang.String) -> b
+    java.util.List getAvailableCameras(android.app.Activity) -> c
+    android.media.CamcorderProfile getBestAvailableCamcorderProfileForResolutionPreset(java.lang.String,io.flutter.plugins.camera.types.ResolutionPreset) -> d
+    java.lang.String serializeDeviceOrientation(io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation) -> e
+io.flutter.plugins.camera.CameraUtils$1 -> io.flutter.plugins.a.x$a:
+    int[] $SwitchMap$io$flutter$plugins$camera$types$ResolutionPreset -> b
+    int[] $SwitchMap$io$flutter$embedding$engine$systemchannels$PlatformChannel$DeviceOrientation -> a
+io.flutter.plugins.camera.CameraZoom -> io.flutter.plugins.a.y:
+    float maxZoom -> c
+    android.graphics.Rect cropRegion -> a
+    android.graphics.Rect sensorSize -> b
+    boolean hasSupport -> d
+    android.graphics.Rect computeZoom(float) -> a
+io.flutter.plugins.camera.DartMessenger -> io.flutter.plugins.a.z:
+    io.flutter.plugin.common.MethodChannel cameraChannel -> a
+    io.flutter.plugin.common.MethodChannel deviceChannel -> b
+    io.flutter.plugin.common.MethodChannel access$100(io.flutter.plugins.camera.DartMessenger) -> a
+    io.flutter.plugin.common.MethodChannel access$300(io.flutter.plugins.camera.DartMessenger) -> b
+    void send(io.flutter.plugins.camera.DartMessenger$CameraEventType) -> c
+    void send(io.flutter.plugins.camera.DartMessenger$CameraEventType,java.util.Map) -> d
+    void send(io.flutter.plugins.camera.DartMessenger$DeviceEventType,java.util.Map) -> e
+    void sendCameraClosingEvent() -> f
+    void sendCameraErrorEvent(java.lang.String) -> g
+    void sendCameraInitializedEvent(java.lang.Integer,java.lang.Integer,io.flutter.plugins.camera.types.ExposureMode,io.flutter.plugins.camera.types.FocusMode,java.lang.Boolean,java.lang.Boolean) -> h
+    void sendDeviceOrientationChangeEvent(io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation) -> i
+io.flutter.plugins.camera.DartMessenger$1 -> io.flutter.plugins.a.z$a:
+    io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation val$orientation -> a
+io.flutter.plugins.camera.DartMessenger$2 -> io.flutter.plugins.a.z$b:
+    io.flutter.plugins.camera.types.ExposureMode val$exposureMode -> c
+    java.lang.Boolean val$exposurePointSupported -> e
+    java.lang.Boolean val$focusPointSupported -> f
+    io.flutter.plugins.camera.types.FocusMode val$focusMode -> d
+    java.lang.Integer val$previewWidth -> a
+    java.lang.Integer val$previewHeight -> b
+io.flutter.plugins.camera.DartMessenger$3 -> io.flutter.plugins.a.z$c:
+    java.lang.String val$description -> a
+io.flutter.plugins.camera.DartMessenger$4 -> io.flutter.plugins.a.z$d:
+    java.util.Map val$args -> b
+    io.flutter.plugins.camera.DartMessenger this$0 -> c
+    io.flutter.plugins.camera.DartMessenger$CameraEventType val$eventType -> a
+io.flutter.plugins.camera.DartMessenger$5 -> io.flutter.plugins.a.z$e:
+    java.util.Map val$args -> b
+    io.flutter.plugins.camera.DartMessenger$DeviceEventType val$eventType -> a
+    io.flutter.plugins.camera.DartMessenger this$0 -> c
+io.flutter.plugins.camera.DartMessenger$CameraEventType -> io.flutter.plugins.a.z$f:
+    io.flutter.plugins.camera.DartMessenger$CameraEventType INITIALIZED -> d
+    io.flutter.plugins.camera.DartMessenger$CameraEventType CLOSING -> c
+    io.flutter.plugins.camera.DartMessenger$CameraEventType[] $VALUES -> e
+    io.flutter.plugins.camera.DartMessenger$CameraEventType ERROR -> b
+    java.lang.String method -> a
+    java.lang.String access$000(io.flutter.plugins.camera.DartMessenger$CameraEventType) -> a
+io.flutter.plugins.camera.DartMessenger$DeviceEventType -> io.flutter.plugins.a.z$g:
+    io.flutter.plugins.camera.DartMessenger$DeviceEventType ORIENTATION_CHANGED -> b
+    java.lang.String method -> a
+    io.flutter.plugins.camera.DartMessenger$DeviceEventType[] $VALUES -> c
+    java.lang.String access$200(io.flutter.plugins.camera.DartMessenger$DeviceEventType) -> a
+io.flutter.plugins.camera.DeviceOrientationManager -> io.flutter.plugins.a.a0:
+    android.content.IntentFilter orientationIntentFilter -> h
+    io.flutter.plugins.camera.DartMessenger messenger -> b
+    android.content.BroadcastReceiver broadcastReceiver -> g
+    android.view.OrientationEventListener orientationEventListener -> f
+    int sensorOrientation -> d
+    android.app.Activity activity -> a
+    io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation lastOrientation -> e
+    boolean isFrontFacing -> c
+    boolean access$000(io.flutter.plugins.camera.DeviceOrientationManager) -> a
+    io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation access$100(io.flutter.plugins.camera.DeviceOrientationManager,int) -> b
+    io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation access$200(io.flutter.plugins.camera.DeviceOrientationManager) -> c
+    io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation access$202(io.flutter.plugins.camera.DeviceOrientationManager,io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation) -> d
+    io.flutter.plugins.camera.DartMessenger access$300(io.flutter.plugins.camera.DeviceOrientationManager) -> e
+    io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation access$400(io.flutter.plugins.camera.DeviceOrientationManager) -> f
+    io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation calculateSensorOrientation(int) -> g
+    int getDeviceDefaultOrientation() -> h
+    android.view.Display getDisplay() -> i
+    int getMediaOrientation() -> j
+    int getMediaOrientation(io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation) -> k
+    io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation getUIOrientation() -> l
+    boolean isSystemAutoRotationLocked() -> m
+    void start() -> n
+    void startSensorListener() -> o
+    void startUIListener() -> p
+    void stop() -> q
+    void stopSensorListener() -> r
+    void stopUIListener() -> s
+io.flutter.plugins.camera.DeviceOrientationManager$1 -> io.flutter.plugins.a.a0$a:
+    io.flutter.plugins.camera.DeviceOrientationManager this$0 -> a
+io.flutter.plugins.camera.DeviceOrientationManager$2 -> io.flutter.plugins.a.a0$b:
+    io.flutter.plugins.camera.DeviceOrientationManager this$0 -> a
+io.flutter.plugins.camera.DeviceOrientationManager$3 -> io.flutter.plugins.a.a0$c:
+    int[] $SwitchMap$io$flutter$embedding$engine$systemchannels$PlatformChannel$DeviceOrientation -> a
+io.flutter.plugins.camera.ErrorCallback -> io.flutter.plugins.a.b0:
+    void onError(java.lang.String,java.lang.String) -> a
+io.flutter.plugins.camera.MethodCallHandlerImpl -> io.flutter.plugins.a.c0:
+    io.flutter.plugins.camera.Camera camera -> h
+    io.flutter.plugins.camera.CameraPermissions$PermissionsRegistry permissionsRegistry -> d
+    io.flutter.view.TextureRegistry textureRegistry -> e
+    io.flutter.plugin.common.BinaryMessenger messenger -> b
+    io.flutter.plugin.common.EventChannel imageStreamChannel -> g
+    io.flutter.plugin.common.MethodChannel methodChannel -> f
+    android.app.Activity activity -> a
+    io.flutter.plugins.camera.CameraPermissions cameraPermissions -> c
+    void handleException(java.lang.Exception,io.flutter.plugin.common.MethodChannel$Result) -> a
+    void onMethodCall(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> b
+    void instantiateCamera(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> c
+    void lambda$onMethodCall$0(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result,java.lang.String,java.lang.String) -> d
+    void lambda$onMethodCall$0$MethodCallHandlerImpl(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result,java.lang.String,java.lang.String) -> e
+    void stopListening() -> f
+io.flutter.plugins.camera.PictureCaptureRequest -> io.flutter.plugins.a.d0:
+    java.lang.Runnable timeoutCallback -> a
+    io.flutter.plugins.camera.PictureCaptureRequest$State state -> d
+    io.flutter.plugin.common.MethodChannel$Result result -> b
+    io.flutter.plugins.camera.PictureCaptureRequest$TimeoutHandler timeoutHandler -> c
+    io.flutter.plugins.camera.PictureCaptureRequest$State access$000(io.flutter.plugins.camera.PictureCaptureRequest) -> a
+    void error(java.lang.String,java.lang.String,java.lang.Object) -> b
+    void finish(java.lang.String) -> c
+    io.flutter.plugins.camera.PictureCaptureRequest$State getState() -> d
+    boolean isFinished() -> e
+    void setState(io.flutter.plugins.camera.PictureCaptureRequest$State) -> f
+io.flutter.plugins.camera.PictureCaptureRequest$1 -> io.flutter.plugins.a.d0$a:
+    io.flutter.plugins.camera.PictureCaptureRequest this$0 -> a
+io.flutter.plugins.camera.PictureCaptureRequest$State -> io.flutter.plugins.a.d0$b:
+    io.flutter.plugins.camera.PictureCaptureRequest$State idle -> a
+    io.flutter.plugins.camera.PictureCaptureRequest$State[] $VALUES -> h
+    io.flutter.plugins.camera.PictureCaptureRequest$State focusing -> b
+    io.flutter.plugins.camera.PictureCaptureRequest$State preCapture -> c
+    io.flutter.plugins.camera.PictureCaptureRequest$State waitingPreCaptureReady -> d
+    io.flutter.plugins.camera.PictureCaptureRequest$State capturing -> e
+    io.flutter.plugins.camera.PictureCaptureRequest$State finished -> f
+    io.flutter.plugins.camera.PictureCaptureRequest$State error -> g
+io.flutter.plugins.camera.PictureCaptureRequest$TimeoutHandler -> io.flutter.plugins.a.d0$c:
+    android.os.Handler handler -> a
+    void clearTimeout(java.lang.Runnable) -> a
+    void resetTimeout(java.lang.Runnable) -> b
+io.flutter.plugins.camera.media.MediaRecorderBuilder -> io.flutter.plugins.a.e0.a:
+    android.media.CamcorderProfile recordingProfile -> b
+    io.flutter.plugins.camera.media.MediaRecorderBuilder$MediaRecorderFactory recorderFactory -> c
+    java.lang.String outputFilePath -> a
+    int mediaOrientation -> e
+    boolean enableAudio -> d
+    android.media.MediaRecorder build() -> a
+    io.flutter.plugins.camera.media.MediaRecorderBuilder setEnableAudio(boolean) -> b
+    io.flutter.plugins.camera.media.MediaRecorderBuilder setMediaOrientation(int) -> c
+io.flutter.plugins.camera.media.MediaRecorderBuilder$MediaRecorderFactory -> io.flutter.plugins.a.e0.a$a:
+    android.media.MediaRecorder makeMediaRecorder() -> a
+io.flutter.plugins.camera.types.ExposureMode -> io.flutter.plugins.a.f0.a:
+    io.flutter.plugins.camera.types.ExposureMode locked -> c
+    io.flutter.plugins.camera.types.ExposureMode auto -> b
+    io.flutter.plugins.camera.types.ExposureMode[] $VALUES -> d
+    java.lang.String strValue -> a
+    io.flutter.plugins.camera.types.ExposureMode getValueForString(java.lang.String) -> a
+io.flutter.plugins.camera.types.FlashMode -> io.flutter.plugins.a.f0.b:
+    io.flutter.plugins.camera.types.FlashMode[] $VALUES -> f
+    io.flutter.plugins.camera.types.FlashMode always -> d
+    io.flutter.plugins.camera.types.FlashMode torch -> e
+    io.flutter.plugins.camera.types.FlashMode off -> b
+    java.lang.String strValue -> a
+    io.flutter.plugins.camera.types.FlashMode auto -> c
+    io.flutter.plugins.camera.types.FlashMode getValueForString(java.lang.String) -> a
+io.flutter.plugins.camera.types.FocusMode -> io.flutter.plugins.a.f0.c:
+    io.flutter.plugins.camera.types.FocusMode locked -> c
+    io.flutter.plugins.camera.types.FocusMode auto -> b
+    io.flutter.plugins.camera.types.FocusMode[] $VALUES -> d
+    java.lang.String strValue -> a
+    io.flutter.plugins.camera.types.FocusMode getValueForString(java.lang.String) -> a
+io.flutter.plugins.camera.types.ResolutionPreset -> io.flutter.plugins.a.f0.d:
+    io.flutter.plugins.camera.types.ResolutionPreset low -> a
+    io.flutter.plugins.camera.types.ResolutionPreset[] $VALUES -> g
+    io.flutter.plugins.camera.types.ResolutionPreset max -> f
+    io.flutter.plugins.camera.types.ResolutionPreset high -> c
+    io.flutter.plugins.camera.types.ResolutionPreset medium -> b
+    io.flutter.plugins.camera.types.ResolutionPreset ultraHigh -> e
+    io.flutter.plugins.camera.types.ResolutionPreset veryHigh -> d
 io.flutter.util.PathUtils -> d.a.d.a:
     java.lang.String getCacheDirectory(android.content.Context) -> a
     java.lang.String getDataDirectory(android.content.Context) -> b
@@ -2706,3 +3170,301 @@ io.flutter.view.VsyncWaiter$1 -> io.flutter.view.f$a:
 io.flutter.view.VsyncWaiter$1$1 -> io.flutter.view.f$a$a:
     long val$cookie -> a
     io.flutter.view.VsyncWaiter$1 this$1 -> b
+org.tensorflow.lite.DataType -> org.tensorflow.lite.a:
+    org.tensorflow.lite.DataType STRING -> f
+    org.tensorflow.lite.DataType BOOL -> g
+    org.tensorflow.lite.DataType UINT8 -> d
+    org.tensorflow.lite.DataType INT64 -> e
+    org.tensorflow.lite.DataType FLOAT32 -> b
+    org.tensorflow.lite.DataType INT32 -> c
+    org.tensorflow.lite.DataType[] $VALUES -> j
+    org.tensorflow.lite.DataType[] values -> i
+    org.tensorflow.lite.DataType INT8 -> h
+    int value -> a
+    int byteSize() -> a
+    org.tensorflow.lite.DataType fromC(int) -> b
+    java.lang.String toStringName() -> c
+org.tensorflow.lite.DataType$1 -> org.tensorflow.lite.a$a:
+    int[] $SwitchMap$org$tensorflow$lite$DataType -> a
+org.tensorflow.lite.Delegate -> org.tensorflow.lite.b:
+    long getNativeHandle() -> a
+org.tensorflow.lite.Interpreter -> org.tensorflow.lite.c:
+    org.tensorflow.lite.NativeInterpreterWrapper wrapper -> a
+    void checkNotClosed() -> a
+    org.tensorflow.lite.Tensor getInputTensor(int) -> b
+    org.tensorflow.lite.Tensor getOutputTensor(int) -> c
+    int getOutputTensorCount() -> d
+    void run(java.lang.Object,java.lang.Object) -> e
+    void runForMultipleInputsOutputs(java.lang.Object[],java.util.Map) -> f
+org.tensorflow.lite.Interpreter$Options -> org.tensorflow.lite.c$a:
+    java.lang.Boolean allowCancellation -> e
+    java.lang.Boolean useXNNPACK -> f
+    java.util.List delegates -> g
+    java.lang.Boolean allowFp16PrecisionForFp32 -> c
+    java.lang.Boolean allowBufferHandleOutput -> d
+    int numThreads -> a
+    java.lang.Boolean useNNAPI -> b
+    org.tensorflow.lite.Interpreter$Options addDelegate(org.tensorflow.lite.Delegate) -> a
+    org.tensorflow.lite.Interpreter$Options setNumThreads(int) -> b
+org.tensorflow.lite.NativeInterpreterWrapper -> org.tensorflow.lite.NativeInterpreterWrapper:
+    org.tensorflow.lite.Tensor[] inputTensors -> f
+    long interpreterHandle -> b
+    java.util.List ownedDelegates -> j
+    long errorHandle -> a
+    java.nio.ByteBuffer modelByteBuffer -> e
+    java.util.List delegates -> i
+    long cancellationFlagHandle -> d
+    long modelHandle -> c
+    boolean isMemoryAllocated -> h
+    org.tensorflow.lite.Tensor[] outputTensors -> g
+    void applyDelegates(org.tensorflow.lite.Interpreter$Options) -> a
+    org.tensorflow.lite.Tensor getInputTensor(int) -> b
+    org.tensorflow.lite.Tensor getOutputTensor(int) -> c
+    int getOutputTensorCount() -> d
+    void init(long,long,org.tensorflow.lite.Interpreter$Options) -> e
+    org.tensorflow.lite.Delegate maybeCreateFlexDelegate(java.util.List) -> f
+    void resizeInput(int,int[]) -> g
+    void resizeInput(int,int[],boolean) -> h
+    void run(java.lang.Object[],java.util.Map) -> i
+org.tensorflow.lite.Tensor -> org.tensorflow.lite.Tensor:
+    org.tensorflow.lite.DataType dtype -> b
+    int[] shapeCopy -> c
+    long nativeHandle -> a
+    java.nio.ByteBuffer buffer() -> a
+    void close() -> b
+    int computeNumDimensions(java.lang.Object) -> c
+    int[] computeShapeOf(java.lang.Object) -> d
+    java.lang.Object copyTo(java.lang.Object) -> e
+    void copyTo(java.nio.Buffer) -> f
+    org.tensorflow.lite.DataType dataType() -> g
+    org.tensorflow.lite.DataType dataTypeOf(java.lang.Object) -> h
+    void fillShape(java.lang.Object,int,int[]) -> i
+    org.tensorflow.lite.Tensor fromIndex(long,int) -> j
+    int[] getInputShapeIfDifferent(java.lang.Object) -> k
+    boolean isBuffer(java.lang.Object) -> l
+    boolean isByteBuffer(java.lang.Object) -> m
+    java.lang.String name() -> n
+    int numBytes() -> o
+    void refreshShape() -> p
+    void setTo(java.lang.Object) -> q
+    void setTo(java.nio.Buffer) -> r
+    int[] shape() -> s
+    void throwIfDstShapeIsIncompatible(java.lang.Object) -> t
+    void throwIfSrcShapeIsIncompatible(java.lang.Object) -> u
+    void throwIfTypeIsIncompatible(java.lang.Object) -> v
+org.tensorflow.lite.TensorFlowLite -> org.tensorflow.lite.TensorFlowLite:
+    java.lang.Throwable LOAD_LIBRARY_EXCEPTION -> a
+    boolean isInit -> b
+    void init() -> a
+    java.lang.String runtimeVersion() -> b
+org.tensorflow.lite.gpu.GpuDelegate -> org.tensorflow.lite.gpu.GpuDelegate:
+    long delegateHandle -> a
+    long getNativeHandle() -> a
+org.tensorflow.lite.gpu.GpuDelegate$Options -> org.tensorflow.lite.gpu.GpuDelegate$a:
+    boolean precisionLossAllowed -> a
+    boolean quantizedModelsAllowed -> b
+    int inferencePreference -> c
+org.tensorflow.lite.nnapi.NnApiDelegate -> org.tensorflow.lite.nnapi.NnApiDelegate:
+    long delegateHandle -> a
+    long getNativeHandle() -> a
+org.tensorflow.lite.nnapi.NnApiDelegate$Options -> org.tensorflow.lite.nnapi.NnApiDelegate$a:
+    java.lang.Boolean allowFp16 -> g
+    java.lang.Integer maxDelegatedPartitions -> e
+    java.lang.Boolean useNnapiCpu -> f
+    java.lang.String cacheDir -> c
+    java.lang.String acceleratorName -> b
+    int executionPreference -> a
+    java.lang.String modelToken -> d
+    int access$000(org.tensorflow.lite.nnapi.NnApiDelegate$Options) -> a
+    java.lang.String access$100(org.tensorflow.lite.nnapi.NnApiDelegate$Options) -> b
+    java.lang.String access$200(org.tensorflow.lite.nnapi.NnApiDelegate$Options) -> c
+    java.lang.String access$300(org.tensorflow.lite.nnapi.NnApiDelegate$Options) -> d
+    java.lang.Integer access$400(org.tensorflow.lite.nnapi.NnApiDelegate$Options) -> e
+    java.lang.Boolean access$500(org.tensorflow.lite.nnapi.NnApiDelegate$Options) -> f
+    java.lang.Boolean access$600(org.tensorflow.lite.nnapi.NnApiDelegate$Options) -> g
+sq.flutter.tflite.TflitePlugin -> e.a.a.a:
+    float[][] labelProb -> f
+    org.tensorflow.lite.Interpreter tfLite -> b
+    io.flutter.plugin.common.PluginRegistry$Registrar mRegistrar -> a
+    java.util.Map partsIds -> i
+    java.util.List parentToChildEdges -> j
+    int inputSize -> d
+    java.lang.String[] partNames -> g
+    java.lang.String[][] poseChain -> h
+    boolean tfLiteBusy -> c
+    java.util.Vector labels -> e
+    java.util.List childToParentEdges -> k
+    android.graphics.Matrix getTransformationMatrix(int,int,int,int,boolean) -> A
+    void initPoseNet(java.util.Map) -> B
+    void loadLabels(android.content.res.AssetManager,java.lang.String) -> C
+    java.lang.String loadModel(java.util.HashMap) -> D
+    void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar) -> E
+    android.renderscript.Allocation renderScriptNV21ToRGBA888(android.content.Context,int,int,byte[]) -> F
+    void runPoseNetOnBinary(java.util.HashMap,io.flutter.plugin.common.MethodChannel$Result) -> G
+    void runPoseNetOnFrame(java.util.HashMap,io.flutter.plugin.common.MethodChannel$Result) -> H
+    void runPoseNetOnImage(java.util.HashMap,io.flutter.plugin.common.MethodChannel$Result) -> I
+    boolean scoreIsMaximumInLocalWindow(int,float,int,int,int,float[][][]) -> J
+    void setPixel(byte[],int,long) -> K
+    float sigmoid(float) -> L
+    void softmax(float[]) -> M
+    java.util.Map traverseToTargetKeypoint(int,java.util.Map,int,float[][][],float[][][],int,float[][][]) -> N
+    boolean withinNmsRadiusOfCorrespondingPoint(java.util.List,float,float,float,int) -> O
+    java.util.List GetTopN(int,float) -> a
+    void onMethodCall(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> b
+    boolean access$000(sq.flutter.tflite.TflitePlugin) -> c
+    boolean access$002(sq.flutter.tflite.TflitePlugin,boolean) -> d
+    org.tensorflow.lite.Interpreter access$100(sq.flutter.tflite.TflitePlugin) -> e
+    java.util.List access$200(sq.flutter.tflite.TflitePlugin,int,float) -> f
+    java.util.Vector access$300(sq.flutter.tflite.TflitePlugin) -> g
+    int access$400(sq.flutter.tflite.TflitePlugin) -> h
+    int access$402(sq.flutter.tflite.TflitePlugin,int) -> i
+    float access$500(sq.flutter.tflite.TflitePlugin,float) -> j
+    void access$600(sq.flutter.tflite.TflitePlugin,float[]) -> k
+    java.util.PriorityQueue buildPartWithScoreQueue(float[][][],double,int) -> l
+    void close() -> m
+    byte[] compressPNG(android.graphics.Bitmap) -> n
+    void detectObjectOnBinary(java.util.HashMap,io.flutter.plugin.common.MethodChannel$Result) -> o
+    void detectObjectOnFrame(java.util.HashMap,io.flutter.plugin.common.MethodChannel$Result) -> p
+    void detectObjectOnImage(java.util.HashMap,io.flutter.plugin.common.MethodChannel$Result) -> q
+    java.nio.ByteBuffer feedInputTensor(android.graphics.Bitmap,float,float) -> r
+    java.nio.ByteBuffer feedInputTensorFrame(java.util.List,int,int,float,float,int) -> s
+    java.nio.ByteBuffer feedInputTensorImage(java.lang.String,float,float) -> t
+    android.graphics.Bitmap feedOutput(java.nio.ByteBuffer,float,float) -> u
+    byte[] fetchArgmax(java.nio.ByteBuffer,java.util.List,java.lang.String) -> v
+    float[] getDisplacement(int,int[],float[][][]) -> w
+    float[] getImageCoords(java.util.Map,int,int,float[][][]) -> x
+    float getInstanceScore(java.util.Map,int) -> y
+    int[] getStridedIndexNearPoint(float,float,int,int,int) -> z
+sq.flutter.tflite.TflitePlugin$1 -> e.a.a.a$a:
+    int compare(java.util.Map,java.util.Map) -> a
+sq.flutter.tflite.TflitePlugin$2 -> e.a.a.a$b:
+    int compare(java.util.Map,java.util.Map) -> a
+sq.flutter.tflite.TflitePlugin$RunModelOnBinary -> e.a.a.a$c:
+    float THRESHOLD -> e
+    java.nio.ByteBuffer imgData -> f
+    sq.flutter.tflite.TflitePlugin this$0 -> g
+    int NUM_RESULTS -> d
+    void onRunTfliteDone() -> d
+    void runTflite() -> e
+sq.flutter.tflite.TflitePlugin$RunModelOnFrame -> e.a.a.a$d:
+    long startTime -> f
+    float THRESHOLD -> e
+    java.nio.ByteBuffer imgData -> g
+    sq.flutter.tflite.TflitePlugin this$0 -> h
+    int NUM_RESULTS -> d
+    void onRunTfliteDone() -> d
+    void runTflite() -> e
+sq.flutter.tflite.TflitePlugin$RunModelOnImage -> e.a.a.a$e:
+    float THRESHOLD -> e
+    long startTime -> g
+    sq.flutter.tflite.TflitePlugin this$0 -> h
+    java.nio.ByteBuffer input -> f
+    int NUM_RESULTS -> d
+    void onRunTfliteDone() -> d
+    void runTflite() -> e
+sq.flutter.tflite.TflitePlugin$RunPix2PixOnBinary -> e.a.a.a$f:
+    java.nio.ByteBuffer output -> f
+    sq.flutter.tflite.TflitePlugin this$0 -> g
+    java.nio.ByteBuffer input -> e
+    long startTime -> d
+    void onRunTfliteDone() -> d
+    void runTflite() -> e
+sq.flutter.tflite.TflitePlugin$RunPix2PixOnFrame -> e.a.a.a$g:
+    float IMAGE_STD -> g
+    java.nio.ByteBuffer output -> i
+    sq.flutter.tflite.TflitePlugin this$0 -> j
+    float IMAGE_MEAN -> f
+    java.nio.ByteBuffer input -> h
+    long startTime -> d
+    java.lang.String outputType -> e
+    void onRunTfliteDone() -> d
+    void runTflite() -> e
+sq.flutter.tflite.TflitePlugin$RunPix2PixOnImage -> e.a.a.a$h:
+    java.nio.ByteBuffer output -> j
+    sq.flutter.tflite.TflitePlugin this$0 -> k
+    float IMAGE_STD -> g
+    java.nio.ByteBuffer input -> i
+    float IMAGE_MEAN -> f
+    long startTime -> h
+    java.lang.String outputType -> e
+    java.lang.String path -> d
+    void onRunTfliteDone() -> d
+    void runTflite() -> e
+sq.flutter.tflite.TflitePlugin$RunPoseNet -> e.a.a.a$i:
+    java.lang.Object[] input -> e
+    sq.flutter.tflite.TflitePlugin this$0 -> l
+    int localMaximumRadius -> j
+    int outputStride -> k
+    int nmsRadius -> i
+    int numResults -> g
+    long startTime -> d
+    java.util.Map outputMap -> f
+    double threshold -> h
+    void onRunTfliteDone() -> d
+    void runTflite() -> e
+sq.flutter.tflite.TflitePlugin$RunSSDMobileNet -> e.a.a.a$j:
+    sq.flutter.tflite.TflitePlugin this$0 -> n
+    float[][] outputClasses -> h
+    float[][][] outputLocations -> g
+    float[] numDetections -> j
+    float threshold -> f
+    int num -> d
+    int numResultsPerClass -> e
+    java.lang.Object[] inputArray -> k
+    java.util.Map outputMap -> l
+    float[][] outputScores -> i
+    long startTime -> m
+    void onRunTfliteDone() -> d
+    void runTflite() -> e
+sq.flutter.tflite.TflitePlugin$RunSegmentationOnBinary -> e.a.a.a$k:
+    long startTime -> f
+    java.util.List labelColors -> d
+    java.nio.ByteBuffer output -> h
+    sq.flutter.tflite.TflitePlugin this$0 -> i
+    java.nio.ByteBuffer input -> g
+    java.lang.String outputType -> e
+    void onRunTfliteDone() -> d
+    void runTflite() -> e
+sq.flutter.tflite.TflitePlugin$RunSegmentationOnFrame -> e.a.a.a$l:
+    long startTime -> f
+    java.util.List labelColors -> d
+    java.nio.ByteBuffer output -> h
+    sq.flutter.tflite.TflitePlugin this$0 -> i
+    java.nio.ByteBuffer input -> g
+    java.lang.String outputType -> e
+    void onRunTfliteDone() -> d
+    void runTflite() -> e
+sq.flutter.tflite.TflitePlugin$RunSegmentationOnImage -> e.a.a.a$m:
+    long startTime -> f
+    java.util.List labelColors -> d
+    java.nio.ByteBuffer output -> h
+    sq.flutter.tflite.TflitePlugin this$0 -> i
+    java.nio.ByteBuffer input -> g
+    java.lang.String outputType -> e
+    void onRunTfliteDone() -> d
+    void runTflite() -> e
+sq.flutter.tflite.TflitePlugin$RunYOLO -> e.a.a.a$n:
+    long startTime -> j
+    float[][][][] output -> m
+    sq.flutter.tflite.TflitePlugin this$0 -> n
+    int numClasses -> l
+    float threshold -> h
+    int gridSize -> k
+    int numResultsPerClass -> i
+    int numBoxesPerBlock -> f
+    java.nio.ByteBuffer imgData -> d
+    int blockSize -> e
+    java.util.List anchors -> g
+    void onRunTfliteDone() -> d
+    void runTflite() -> e
+sq.flutter.tflite.TflitePlugin$RunYOLO$1 -> e.a.a.a$n$a:
+    int compare(java.util.Map,java.util.Map) -> a
+sq.flutter.tflite.TflitePlugin$TfliteTask -> e.a.a.a$o:
+    io.flutter.plugin.common.MethodChannel$Result result -> a
+    sq.flutter.tflite.TflitePlugin this$0 -> c
+    boolean asynch -> b
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+    void executeTfliteTask() -> b
+    void onPostExecute(java.lang.Void) -> c
+    void onRunTfliteDone() -> d
+    void runTflite() -> e

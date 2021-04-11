@@ -1,27 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Users\\Documents\\Flutter\\hackathon\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\Users\\Documents\\Flutter\\baby-monitoring-system\\bms-flutter-app\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
             "map": [
-                {
-                    "source": "D:\\Users\\Documents\\Flutter\\hackathon\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "176,830",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "472,996"
-                    },
-                    "to": {
-                        "startLines": "87,92",
-                        "startColumns": "4,4",
-                        "startOffsets": "5245,5542",
-                        "endLines": "91,94",
-                        "endColumns": "12,12",
-                        "endOffsets": "5537,5706"
-                    }
-                },
                 {
                     "source": "C:\\Users\\Thirumalesh\\.gradle\\caches\\transforms-2\\files-2.1\\c55ef91c26d4308e6afaf93e553ef302\\coordinatorlayout-1.0.0\\res\\values\\values.xml",
                     "from": {
@@ -56,6 +37,25 @@
                         "startOffsets": "248,337,466,2079,2132,2185,2238,5044,6029,6205,6327,6589,6784",
                         "endColumns": "88,70,72,52,52,52,52,59,65,121,60,65,66",
                         "endOffsets": "332,403,534,2127,2180,2233,2286,5099,6090,6322,6383,6650,6846"
+                    }
+                },
+                {
+                    "source": "D:\\Users\\Documents\\Flutter\\baby-monitoring-system\\bms-flutter-app\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "176,830",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "472,996"
+                    },
+                    "to": {
+                        "startLines": "87,92",
+                        "startColumns": "4,4",
+                        "startOffsets": "5245,5542",
+                        "endLines": "91,94",
+                        "endColumns": "12,12",
+                        "endOffsets": "5537,5706"
                     }
                 },
                 {

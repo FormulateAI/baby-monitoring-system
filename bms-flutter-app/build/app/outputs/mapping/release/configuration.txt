@@ -1,4 +1,4 @@
-# The proguard configuration file for the following section is D:\Users\Documents\Flutter\hackathon\build\app\intermediates\proguard-files\proguard-android.txt-4.1.0
+# The proguard configuration file for the following section is D:\Users\Documents\Flutter\baby-monitoring-system\bms-flutter-app\build\app\intermediates\proguard-files\proguard-android.txt-4.1.0
 # This is a configuration file for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html
 #
@@ -110,7 +110,7 @@
 # These classes are duplicated between android.jar and core-lambda-stubs.jar.
 -dontnote java.lang.invoke.**
 
-# End of content from D:\Users\Documents\Flutter\hackathon\build\app\intermediates\proguard-files\proguard-android.txt-4.1.0
+# End of content from D:\Users\Documents\Flutter\baby-monitoring-system\bms-flutter-app\build\app\intermediates\proguard-files\proguard-android.txt-4.1.0
 # The proguard configuration file for the following section is D:\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro
 # Build the ephemeral app in a module project.
 # Prevents: Warning: library class <plugin-package> depends on program class io.flutter.plugin.**
@@ -121,11 +121,37 @@
 -dontwarn android.**
 
 # End of content from D:\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro
-# The proguard configuration file for the following section is D:\Users\Documents\Flutter\hackathon\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
+# The proguard configuration file for the following section is D:\Users\Documents\Flutter\baby-monitoring-system\bms-flutter-app\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
--keep class com.example.hackathon.MainActivity { <init>(); }
+-keep class com.example.final_hackathon.MainActivity { <init>(); }
 
-# End of content from D:\Users\Documents\Flutter\hackathon\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
+# End of content from D:\Users\Documents\Flutter\baby-monitoring-system\bms-flutter-app\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
+# The proguard configuration file for the following section is C:\Users\Thirumalesh\.gradle\caches\transforms-2\files-2.1\7ce7a4854372208b6fbe008d583a1bf4\jetified-tensorflow-lite-2.4.0\proguard.txt
+-keepclassmembers class org.tensorflow.lite.NativeInterpreterWrapper {
+    private long inferenceDurationNanoseconds;
+}
+
+-keep class org.tensorflow.lite.annotations.UsedByReflection
+-keep @org.tensorflow.lite.annotations.UsedByReflection class *
+-keepclassmembers class * {
+    @org.tensorflow.lite.annotations.UsedByReflection *;
+}
+
+
+# End of content from C:\Users\Thirumalesh\.gradle\caches\transforms-2\files-2.1\7ce7a4854372208b6fbe008d583a1bf4\jetified-tensorflow-lite-2.4.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Thirumalesh\.gradle\caches\transforms-2\files-2.1\d221326c5f0a10df4417d4176750fbc2\jetified-tensorflow-lite-gpu-2.4.0\proguard.txt
+-keepclassmembers class org.tensorflow.lite.NativeInterpreterWrapper {
+    private long inferenceDurationNanoseconds;
+}
+
+-keep class org.tensorflow.lite.annotations.UsedByReflection
+-keep @org.tensorflow.lite.annotations.UsedByReflection class *
+-keepclassmembers class * {
+    @org.tensorflow.lite.annotations.UsedByReflection *;
+}
+
+
+# End of content from C:\Users\Thirumalesh\.gradle\caches\transforms-2\files-2.1\d221326c5f0a10df4417d4176750fbc2\jetified-tensorflow-lite-gpu-2.4.0\proguard.txt
 # The proguard configuration file for the following section is C:\Users\Thirumalesh\.gradle\caches\transforms-2\files-2.1\c6d01c8c444ebd60070e8fd3602db39e\media-1.0.0\proguard.txt
 # Copyright (C) 2017 The Android Open Source Project
 #

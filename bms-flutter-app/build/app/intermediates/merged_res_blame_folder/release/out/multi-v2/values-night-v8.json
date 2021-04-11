@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Users\\Documents\\Flutter\\hackathon\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "D:\\Users\\Documents\\Flutter\\baby-monitoring-system\\bms-flutter-app\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\Documents\\Flutter\\hackathon\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\Users\\Documents\\Flutter\\baby-monitoring-system\\bms-flutter-app\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

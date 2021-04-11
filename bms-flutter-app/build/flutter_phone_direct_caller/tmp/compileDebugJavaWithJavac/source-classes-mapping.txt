@@ -1,4 +1,0 @@
-com/yanisalfian/flutterphonedirectcaller/FlutterPhoneDirectCallerPlugin.java
- com.yanisalfian.flutterphonedirectcaller.FlutterPhoneDirectCallerPlugin
-com/yanisalfian/flutterphonedirectcaller/BuildConfig.java
- com.yanisalfian.flutterphonedirectcaller.BuildConfig

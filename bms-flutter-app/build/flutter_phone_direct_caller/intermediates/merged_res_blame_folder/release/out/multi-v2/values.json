@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Users\\Documents\\Flutter\\hackathon\\build\\flutter_phone_direct_caller\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\Users\\Documents\\Flutter\\baby-monitoring-system\\bms-flutter-app\\build\\flutter_phone_direct_caller\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Thirumalesh\\.gradle\\caches\\transforms-2\\files-2.1\\c55ef91c26d4308e6afaf93e553ef302\\coordinatorlayout-1.0.0\\res\\values\\values.xml",
@@ -61,7 +61,7 @@
             ]
         },
         {
-            "outputFile": "D:\\Users\\Documents\\Flutter\\hackathon\\build\\flutter_phone_direct_caller\\intermediates\\res\\merged\\release\\values\\values.xml",
+            "outputFile": "D:\\Users\\Documents\\Flutter\\baby-monitoring-system\\bms-flutter-app\\build\\flutter_phone_direct_caller\\intermediates\\res\\merged\\release\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Thirumalesh\\.gradle\\caches\\transforms-2\\files-2.1\\c55ef91c26d4308e6afaf93e553ef302\\coordinatorlayout-1.0.0\\res\\values\\values.xml",

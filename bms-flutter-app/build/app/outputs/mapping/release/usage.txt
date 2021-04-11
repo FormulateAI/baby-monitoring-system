@@ -1,7 +1,7 @@
 androidx.drawerlayout.R$attr
 android.support.v4.media.session.MediaSessionCompat$OnActiveChangeListener
+com.example.final_hackathon.R$color
 kotlin.jvm.functions.Function0
-com.example.hackathon.R$string
 androidx.activity.R$attr
 kotlin.jvm.internal.PropertyReference1Impl
 kotlin.collections.EmptyIterator
@@ -51,6 +51,7 @@ androidx.collection.SimpleArrayMap:
 androidx.core.graphics.TypefaceCompat
 kotlin.contracts.ContractBuilderKt
 kotlin.sequences.DropSequence
+io.flutter.plugins.camera.R$integer
 androidx.media.R$drawable
 androidx.core.view.AccessibilityDelegateCompat$AccessibilityDelegateAdapter
 kotlin.coroutines.jvm.internal.Boxing
@@ -245,6 +246,7 @@ android.support.v4.media.MediaBrowserCompat$SubscriptionCallback$StubApi21
 io.flutter.embedding.engine.loader.FlutterLoader$2$1
 androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImpl
 androidx.core.view.accessibility.AccessibilityManagerCompat
+io.flutter.plugins.camera.R$drawable
 kotlin.random.FallbackThreadLocalRandom
 androidx.drawerlayout.widget.DrawerLayout$ViewDragCallback$1
 android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi28
@@ -273,6 +275,7 @@ com.yanisalfian.flutterphonedirectcaller.R$color
 androidx.media.R$style
 androidx.activity.ComponentActivity$1
 androidx.core.view.ViewCompat$AccessibilityPaneVisibilityManager
+org.tensorflow.lite.gpu.CompatibilityList
 kotlin.sequences.DropWhileSequence$iterator$1
 kotlin.UIntKt
 android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi19
@@ -283,7 +286,6 @@ androidx.lifecycle.CompositeGeneratedAdaptersObserver:
 android.support.v4.media.RatingCompat$Style
 kotlin.jvm.internal.MutableLocalVariableReference
 androidx.core.hardware.fingerprint.FingerprintManagerCompat$AuthenticationCallback
-com.example.hackathon.R$color
 androidx.core.view.accessibility.AccessibilityViewCommand$MoveWindowArguments
 androidx.core.app.ActivityCompat$SharedElementCallback21Impl
 kotlin.collections.ArraysKt___ArraysKt$withIndex$4
@@ -398,8 +400,6 @@ androidx.core.app.RemoteInput$Builder
 androidx.fragment.app.DialogFragment$1
 androidx.media.VolumeProviderCompat$ControlType
 kotlin.collections.AbstractMap$toString$1
-io.flutter.plugin.common.BinaryMessenger:
-    public abstract void send(java.lang.String,java.nio.ByteBuffer)
 kotlin.sequences.IndexingSequence
 kotlin.collections.CharIterator
 kotlin.collections.unsigned.UArraysKt___UArraysKt$withIndex$4
@@ -489,6 +489,7 @@ android.support.v4.media.session.MediaSessionCompatApi21
 androidx.fragment.R$style
 androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi26$1
 androidx.core.database.CursorWindowCompat
+sq.flutter.tflite.R$styleable
 androidx.fragment.app.FragmentStatePagerAdapter
 androidx.documentfile.provider.DocumentsContractApi19
 androidx.annotation.InspectableProperty$FlagEntry
@@ -517,6 +518,7 @@ androidx.core.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat
 kotlin.coroutines.experimental.SafeContinuation$Companion
 androidx.core.widget.TextViewCompat$OreoCallback
 androidx.core.util.PatternsCompat
+com.example.final_hackathon.R$styleable
 androidx.core.net.DatagramSocketWrapper
 android.support.v4.media.session.MediaSessionCompat$Callback$StubApi23
 kotlin.sequences.SequencesKt__SequencesKt$ifEmpty$1
@@ -524,6 +526,7 @@ kotlin.ranges.ClosedDoubleRange
 kotlin.collections.ArraysKt___ArraysJvmKt$asList$5
 kotlin.sequences.USequencesKt___USequencesKt
 androidx.asynclayoutinflater.R$string
+sq.flutter.tflite.R$id
 androidx.core.view.inputmethod.InputConnectionCompat
 kotlin.ULongArray$Iterator
 androidx.slidingpanelayout.R$dimen
@@ -532,6 +535,7 @@ androidx.fragment.app.BackStackState$1
 androidx.viewpager.widget.ViewPager$LayoutParams
 androidx.core.content.pm.ShortcutInfoCompatSaver
 android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi23
+sq.flutter.tflite.R$style
 io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager$1
 kotlin.sequences.SequencesKt___SequencesKt$minus$3$iterator$1
 androidx.media.MediaBrowserServiceCompatApi21$ServiceCompatProxy
@@ -539,13 +543,16 @@ androidx.fragment.app.FragmentTransitionCompat21
 kotlin.jvm.JvmClassMappingKt
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$6
 androidx.core.R$layout
+io.flutter.plugins.camera.DartMessenger:
+    void send(io.flutter.plugins.camera.DartMessenger$DeviceEventType)
 androidx.lifecycle.Transformations$2
 androidx.lifecycle.ReflectiveGenericLifecycleObserver:
     void <init>(java.lang.Object)
-com.example.hackathon.R$layout
 androidx.core.app.ShareCompat$IntentReader
 kotlin.BuilderInference
 androidx.annotation.MainThread
+org.tensorflow.lite.DataType:
+    int c()
 kotlin.jdk7.AutoCloseableKt
 io.flutter.app.FlutterActivity
 kotlin.LazyKt__LazyKt
@@ -558,7 +565,6 @@ androidx.core.app.BundleCompat$BundleCompatBaseImpl:
     private static boolean sPutIBinderMethodFetched
 androidx.core.os.EnvironmentCompat
 kotlin.math.MathKt__MathJVMKt
-com.example.hackathon.R
 androidx.legacy.app.ActionBarDrawerToggle$SetIndicatorInfo
 io.flutter.embedding.engine.systemchannels.NavigationChannel:
     public void setMethodCallHandler(io.flutter.plugin.common.MethodChannel$MethodCallHandler)
@@ -606,6 +612,7 @@ androidx.lifecycle.LiveData$ObserverWrapper:
     int mLastVersion
 kotlin.coroutines.experimental.jvm.internal.CoroutineImpl
 kotlin.sequences.SequencesKt___SequencesKt$asIterable$$inlined$Iterable$1
+sq.flutter.tflite.R$dimen
 kotlin.SafePublicationLazyImpl$Companion
 kotlin.properties.ObservableProperty
 kotlin.jvm.internal.StringCompanionObject
@@ -692,9 +699,7 @@ android.support.v4.media.session.MediaControllerCompat$MediaControllerImplBase
 kotlin.collections.ArraysKt___ArraysJvmKt$asList$4
 androidx.annotation.RequiresPermission
 io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding:
-    public android.content.Context getApplicationContext()
     public io.flutter.embedding.engine.FlutterEngine getFlutterEngine()
-    public io.flutter.view.TextureRegistry getTextureRegistry()
     public io.flutter.plugin.platform.PlatformViewRegistry getPlatformViewRegistry()
     public io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterAssets getFlutterAssets()
 androidx.fragment.app.Fragment:
@@ -954,12 +959,10 @@ androidx.drawerlayout.widget.DrawerLayout$DrawerListener
 androidx.core.view.NestedScrollingChild2
 kotlin.collections.MovingSubList
 io.flutter.embedding.engine.plugins.shim.ShimRegistrar:
-    public android.content.Context context()
     public android.content.Context activeContext()
     public io.flutter.view.TextureRegistry textures()
     public io.flutter.plugin.platform.PlatformViewRegistry platformViewRegistry()
     public io.flutter.view.FlutterView view()
-    public java.lang.String lookupKeyForAsset(java.lang.String)
     public java.lang.String lookupKeyForAsset(java.lang.String,java.lang.String)
     public io.flutter.plugin.common.PluginRegistry$Registrar publish(java.lang.Object)
     public io.flutter.plugin.common.PluginRegistry$Registrar addActivityResultListener(io.flutter.plugin.common.PluginRegistry$ActivityResultListener)
@@ -968,6 +971,7 @@ io.flutter.embedding.engine.plugins.shim.ShimRegistrar:
     public io.flutter.plugin.common.PluginRegistry$Registrar addViewDestroyListener(io.flutter.plugin.common.PluginRegistry$ViewDestroyListener)
     private static final java.lang.String TAG
 androidx.annotation.InterpolatorRes
+io.flutter.plugins.camera.R$style
 androidx.core.app.RemoteInput
 androidx.core.view.ActionProvider$SubUiVisibilityListener
 androidx.core.app.NotificationCompatBuilder
@@ -992,7 +996,6 @@ androidx.interpolator.view.animation.LinearOutSlowInInterpolator
 kotlin.text.UStringsKt
 kotlin.jvm.internal.DefaultConstructorMarker
 androidx.lifecycle.ReportFragment
-io.flutter.plugin.common.EventChannel$IncomingStreamRequestHandler
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$2
 kotlin.jvm.internal.FloatSpreadBuilder
 kotlin.coroutines.experimental.CoroutineContext$Key
@@ -1012,12 +1015,17 @@ androidx.drawerlayout.R$drawable
 kotlin.random.XorWowRandom
 kotlin.collections.ArraysKt___ArraysKt$groupingBy$1
 kotlin.reflect.KMutableProperty0$Setter
+org.tensorflow.lite.gpu.GpuDelegate:
+    private static final long INVALID_DELEGATE_HANDLE
+    private static final java.lang.String TFLITE_GPU_LIB
 kotlin.jvm.internal.InlineMarker
 androidx.activity.R$drawable
-io.flutter.plugin.common.EventChannel
+io.flutter.plugin.common.EventChannel:
+    private static final java.lang.String TAG
 androidx.legacy.coreutils.R$integer
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenComparator$1
 kotlin.coroutines.AbstractCoroutineContextElement
+io.flutter.plugins.camera.R$color
 androidx.core.content.res.FontResourcesParserCompat$FontFileResourceEntry
 androidx.core.internal.view.SupportSubMenu
 androidx.core.view.NestedScrollingParent3
@@ -1102,7 +1110,9 @@ androidx.core.widget.ContentLoadingProgressBar
 android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi24
 kotlin.coroutines.experimental.ContinuationInterceptor
 androidx.core.view.ViewCompat$2
-io.flutter.plugin.common.EventChannel$IncomingStreamRequestHandler$EventSinkImplementation
+io.flutter.plugin.common.EventChannel$IncomingStreamRequestHandler$EventSinkImplementation:
+    public void error(java.lang.String,java.lang.String,java.lang.Object)
+    public void endOfStream()
 androidx.core.app.NotificationCompatJellybean
 io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager$FeatureInstallStateUpdatedListener
 kotlin.collections.AbstractMap$keys$1$iterator$1
@@ -1114,6 +1124,9 @@ kotlin.jvm.internal.BooleanCompanionObject
 io.flutter.embedding.engine.systemchannels.SystemChannel:
     private static final java.lang.String TAG
 kotlin.jvm.internal.Ref$ObjectRef
+io.flutter.plugins.camera.BuildConfig
+io.flutter.plugins.camera.PictureCaptureRequest$TimeoutHandler:
+    private static final int REQUEST_TIMEOUT
 androidx.lifecycle.Lifecycling$1:
     void <init>(androidx.lifecycle.LifecycleEventObserver)
 android.support.v4.media.MediaBrowserCompat$ConnectionCallback$StubApi21
@@ -1134,6 +1147,12 @@ android.support.v4.media.session.MediaControllerCompatApi24$TransportControls
 kotlin.reflect.KType
 androidx.core.view.ViewConfigurationCompat
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$2
+org.tensorflow.lite.TensorFlowLite:
+    private void <init>()
+    public static java.lang.String version()
+    public static java.lang.String schemaVersion()
+    public static native java.lang.String nativeSchemaVersion()
+    private static final java.lang.String LIBNAME
 androidx.core.os.HandlerCompat
 kotlin.UIntArrayKt
 kotlin.UIntArray
@@ -1151,7 +1170,17 @@ androidx.loader.R$id
 android.support.v4.media.session.MediaSessionCompatApi24$Callback
 androidx.viewpager.widget.ViewPager$2
 androidx.legacy.coreui.R$id
+io.flutter.plugins.camera.CameraZoom:
+    public static final float DEFAULT_ZOOM_FACTOR
 kotlin.collections.CollectionsKt__CollectionsKt$binarySearchBy$1
+org.tensorflow.lite.Tensor:
+    static int computeNumElements(int[])
+    private static native int index(long)
+    public int numDimensions()
+    public int numElements()
+    public int[] shapeSignature()
+    public int index()
+    public org.tensorflow.lite.Tensor$QuantizationParams quantizationParams()
 androidx.fragment.R$attr
 kotlin.io.FileTreeWalk$WalkState
 kotlin.jvm.functions.Function11
@@ -1173,7 +1202,9 @@ androidx.core.provider.FontsContractCompat$2
 androidx.legacy.v4.R$id
 androidx.fragment.app.Fragment$AnimationInfo
 kotlin.text.StringsKt__StringsKt$splitToSequence$2
-io.flutter.plugin.common.EventChannel$EventSink
+io.flutter.plugin.common.EventChannel$EventSink:
+    public abstract void error(java.lang.String,java.lang.String,java.lang.Object)
+    public abstract void endOfStream()
 kotlin.jvm.internal.IntCompanionObject
 androidx.customview.R$style
 android.support.v4.media.session.MediaControllerCompat$MediaControllerExtraData
@@ -1199,6 +1230,9 @@ android.support.v4.media.session.MediaSessionCompatApi24
 androidx.coordinatorlayout.widget.CoordinatorLayout$LayoutParams
 kotlin.jvm.internal.MagicApiIntrinsics
 androidx.cursoradapter.widget.CursorAdapter
+org.tensorflow.lite.Tensor$QuantizationParams:
+    public float getScale()
+    public int getZeroPoint()
 io.flutter.embedding.android.DrawableSplashScreen$DrawableSplashScreenView:
     public void <init>(android.content.Context,android.util.AttributeSet)
 kotlin.collections.AbstractList$SubList
@@ -1217,6 +1251,9 @@ io.flutter.embedding.engine.systemchannels.SettingsChannel:
     private static final java.lang.String TEXT_SCALE_FACTOR
     private static final java.lang.String ALWAYS_USE_24_HOUR_FORMAT
     private static final java.lang.String PLATFORM_BRIGHTNESS
+io.flutter.plugins.camera.CameraPlugin:
+    public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
+    private static final java.lang.String TAG
 kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$1
 kotlin.sequences.SequencesKt
 kotlin.coroutines.experimental.migration.ExperimentalSuspendFunction1Migration
@@ -1294,10 +1331,12 @@ androidx.core.app.NotificationCompat$CarExtender
 kotlin.jvm.internal.TypeReference
 androidx.asynclayoutinflater.R$integer
 androidx.lifecycle.GenericLifecycleObserver
+sq.flutter.tflite.R$drawable
 kotlin.text.MatchGroup
 kotlin.sequences.SequencesKt__SequencesKt$flatten$3
 android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$6
 androidx.annotation.LayoutRes
+io.flutter.plugins.camera.R$layout
 kotlin.text.Regex$Serialized
 android.support.v4.app.INotificationSideChannel
 androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$3
@@ -1363,9 +1402,9 @@ io.flutter.embedding.engine.plugins.service.ServicePluginBinding:
 androidx.loader.R$color
 androidx.fragment.R$string
 kotlin.sequences.SequencesKt___SequencesKt$onEach$1
-com.example.hackathon.R$integer
 kotlin.collections.Grouping
 androidx.annotation.UiThread
+sq.flutter.tflite.R$color
 kotlin.text.MatcherMatchResult$groups$1$iterator$1
 androidx.customview.view.AbsSavedState$2
 kotlin.text.CharDirectionality
@@ -1378,6 +1417,12 @@ kotlin.ranges.ULongProgressionIterator
 kotlin.jvm.KotlinReflectionNotSupportedError
 androidx.fragment.app.FragmentState$1
 androidx.core.R$integer
+org.tensorflow.lite.Interpreter$Options:
+    public org.tensorflow.lite.Interpreter$Options setUseNNAPI(boolean)
+    public org.tensorflow.lite.Interpreter$Options setAllowFp16PrecisionForFp32(boolean)
+    public org.tensorflow.lite.Interpreter$Options setAllowBufferHandleOutput(boolean)
+    public org.tensorflow.lite.Interpreter$Options setCancellable(boolean)
+    public org.tensorflow.lite.Interpreter$Options setUseXNNPACK(boolean)
 kotlin.jvm.JvmSuppressWildcards
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$6
 kotlin.comparisons.ReverseOrderComparator
@@ -1402,11 +1447,11 @@ io.flutter.embedding.engine.loader.FlutterLoader$Settings:
 kotlin.collections.ArraysKt___ArraysKt$withIndex$3
 androidx.core.util.Pools$SynchronizedPool
 androidx.arch.core.executor.ArchTaskExecutor
-com.example.hackathon.BuildConfig
 androidx.activity.ComponentActivity$NonConfigurationInstances
 kotlin.jvm.functions.Function15
 android.support.v4.media.MediaBrowserCompatApi21$MediaItem
 androidx.annotation.InspectableProperty
+io.flutter.plugins.camera.R$attr
 kotlin.io.OnErrorAction
 androidx.core.app.ShareCompat
 androidx.core.content.SharedPreferencesCompat$EditorCompat
@@ -1433,7 +1478,6 @@ kotlin.collections.unsigned.UArraysKt___UArraysKt$withIndex$3
 androidx.annotation.TransitionRes
 androidx.fragment.app.FragmentTransition$2
 android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi19$1
-com.example.hackathon.R$mipmap
 kotlin.jvm.internal.ArrayIteratorKt
 kotlin.sequences.Sequence
 androidx.core.app.ComponentActivity$ExtraData
@@ -1441,8 +1485,8 @@ androidx.annotation.BinderThread
 kotlin.text.StringsKt___StringsKt$groupingBy$1
 androidx.swiperefreshlayout.widget.CircularProgressDrawable$2
 kotlin.sequences.SequencesKt___SequencesKt$minus$3
-io.flutter.embedding.engine.plugins.contentprovider.ContentProviderControlSurface
 io.flutter.app.FlutterActivityDelegate$ViewFactory
+io.flutter.embedding.engine.plugins.contentprovider.ContentProviderControlSurface
 androidx.fragment.app.FragmentTabHost$SavedState
 io.flutter.embedding.android.FlutterFragment$1
 androidx.core.app.ActivityRecreator$1
@@ -1521,6 +1565,7 @@ androidx.fragment.app.FragmentManagerImpl$EndViewTransitionAnimation
 kotlin.coroutines.experimental.migration.ContinuationInterceptorMigration
 androidx.slidingpanelayout.R$attr
 kotlin.internal.PlatformImplementationsKt
+io.flutter.plugins.camera.R$string
 androidx.annotation.ArrayRes
 kotlin.collections.MutableMapWithDefault
 androidx.annotation.StyleRes
@@ -1566,7 +1611,6 @@ io.flutter.plugin.mouse.MouseCursorPlugin$2:
 io.flutter.embedding.engine.dart.DartExecutor:
     public void executeDartCallback(io.flutter.embedding.engine.dart.DartExecutor$DartCallback)
     public io.flutter.plugin.common.BinaryMessenger getBinaryMessenger()
-    public void send(java.lang.String,java.nio.ByteBuffer)
     public int getPendingChannelResponseCount()
     public void setIsolateServiceIdListener(io.flutter.embedding.engine.dart.DartExecutor$IsolateServiceIdListener)
     private static final java.lang.String TAG
@@ -1584,8 +1628,10 @@ kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt
 kotlin.collections.ArraysKt___ArraysJvmKt$asList$6
 kotlin.collections.SetsKt__SetsKt
 kotlin.UInt
+com.example.final_hackathon.R
 kotlin.text.CharCategory
 kotlin.io.FilesKt__FilePathComponentsKt
+com.example.final_hackathon.R$drawable
 androidx.viewpager.widget.PagerTitleStrip
 androidx.core.hardware.fingerprint.FingerprintManagerCompat$1
 androidx.core.text.util.LinkifyCompat$LinkSpec
@@ -1666,6 +1712,8 @@ android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper:
 androidx.core.util.Pools
 androidx.core.os.OperationCanceledException
 androidx.annotation.MenuRes
+org.tensorflow.lite.annotations.UsedByReflection:
+    public abstract java.lang.String value()
 android.support.v4.media.ParceledListSliceAdapterApi21
 androidx.fragment.app.FragmentManagerViewModel$1
 androidx.savedstate.SavedStateRegistry:
@@ -1708,6 +1756,18 @@ androidx.core.app.NotificationCompat$GroupAlertBehavior
 androidx.core.graphics.drawable.RoundedBitmapDrawableFactory$DefaultRoundedBitmapDrawable
 androidx.core.view.NestedScrollingParent2
 kotlin.ranges.ULongProgression$Companion
+org.tensorflow.lite.nnapi.NnApiDelegate$Options:
+    public org.tensorflow.lite.nnapi.NnApiDelegate$Options setExecutionPreference(int)
+    public org.tensorflow.lite.nnapi.NnApiDelegate$Options setAcceleratorName(java.lang.String)
+    public org.tensorflow.lite.nnapi.NnApiDelegate$Options setCacheDir(java.lang.String)
+    public org.tensorflow.lite.nnapi.NnApiDelegate$Options setModelToken(java.lang.String)
+    public org.tensorflow.lite.nnapi.NnApiDelegate$Options setMaxNumberOfDelegatedPartitions(int)
+    public org.tensorflow.lite.nnapi.NnApiDelegate$Options setUseNnapiCpu(boolean)
+    public org.tensorflow.lite.nnapi.NnApiDelegate$Options setAllowFp16(boolean)
+    public static final int EXECUTION_PREFERENCE_UNDEFINED
+    public static final int EXECUTION_PREFERENCE_LOW_POWER
+    public static final int EXECUTION_PREFERENCE_FAST_SINGLE_ANSWER
+    public static final int EXECUTION_PREFERENCE_SUSTAINED_SPEED
 kotlin.InitializedLazyImpl
 androidx.activity.R$style
 kotlin.jvm.JvmSynthetic
@@ -1850,6 +1910,9 @@ io.flutter.embedding.engine.systemchannels.KeyEventChannel$FlutterKeyEvent:
 androidx.coordinatorlayout.R$dimen
 androidx.fragment.app.FragmentManagerImpl$OpGenerator
 com.yanisalfian.flutterphonedirectcaller.R$drawable
+io.flutter.plugins.camera.CameraPermissions:
+    private static final int CAMERA_REQUEST_ID
+io.flutter.plugins.camera.R$styleable
 kotlin.reflect.KMutableProperty1$Setter
 androidx.core.widget.ScrollerCompat
 kotlin.coroutines.experimental.migration.ExperimentalSuspendFunction0Migration
@@ -1901,8 +1964,8 @@ android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$5
 kotlin.io.CloseableKt
 androidx.annotation.IdRes
 kotlin.jvm.functions.Function10
-androidx.drawerlayout.widget.DrawerLayout
 androidx.customview.widget.FocusStrategy$SequentialComparator
+androidx.drawerlayout.widget.DrawerLayout
 android.support.v4.media.MediaBrowserCompat$ItemCallback$StubApi23
 io.flutter.view.FlutterView$3
 android.support.v4.media.session.IMediaSession$Stub:
@@ -2008,6 +2071,7 @@ androidx.coordinatorlayout.R$id
 io.flutter.view.FlutterView$ZeroSides
 androidx.slidingpanelayout.widget.SlidingPaneLayout$SimplePanelSlideListener
 androidx.collection.CircularIntArray
+com.example.final_hackathon.R$attr
 kotlin.collections.AbstractSet$Companion
 androidx.drawerlayout.widget.DrawerLayout$ChildAccessibilityDelegate
 kotlin.internal.Exact
@@ -2060,6 +2124,7 @@ kotlin.jvm.internal.PrimitiveSpreadBuilder
 kotlin.collections.CollectionsKt__CollectionsJVMKt
 androidx.loader.R$attr
 kotlin.jvm.internal.Ref$CharRef
+com.example.final_hackathon.R$string
 androidx.arch.core.executor.ArchTaskExecutor$1
 io.flutter.embedding.engine.FlutterEngineConnectionRegistry$DefaultFlutterAssets:
     public java.lang.String getAssetFilePathByName(java.lang.String)
@@ -2149,11 +2214,14 @@ androidx.core.R$dimen
 androidx.drawerlayout.widget.DrawerLayout$SavedState
 kotlin.coroutines.experimental.migration.ContextMigration$Key
 androidx.core.view.ViewCompat$FocusRealDirection
-com.example.hackathon.R$id
 io.flutter.embedding.engine.FlutterEngineGroup$1
 kotlin.io.LinesSequence$iterator$1
 io.flutter.embedding.android.FlutterEngineProvider
-androidx.core.math.MathUtils
+sq.flutter.tflite.R$integer
+androidx.core.math.MathUtils:
+    private void <init>()
+    public static double clamp(double,double,double)
+    public static int clamp(int,int,int)
 androidx.core.os.TraceCompat
 kotlin.sequences.SequencesKt___SequencesJvmKt$filterIsInstance$1
 androidx.core.app.JobIntentService$GenericWorkItem
@@ -2195,16 +2263,13 @@ androidx.coordinatorlayout.R$attr
 androidx.core.util.ObjectsCompat
 androidx.annotation.WorkerThread
 org.jetbrains.annotations.Nullable
-com.example.hackathon.R$dimen
 kotlin.text.StringsKt__StringsKt$splitToSequence$1
 kotlin.coroutines.jvm.internal.CompletedContinuation
 io.flutter.plugin.common.PluginRegistry$Registrar:
-    public abstract android.content.Context context()
     public abstract android.content.Context activeContext()
     public abstract io.flutter.view.TextureRegistry textures()
     public abstract io.flutter.plugin.platform.PlatformViewRegistry platformViewRegistry()
     public abstract io.flutter.view.FlutterView view()
-    public abstract java.lang.String lookupKeyForAsset(java.lang.String)
     public abstract java.lang.String lookupKeyForAsset(java.lang.String,java.lang.String)
     public abstract io.flutter.plugin.common.PluginRegistry$Registrar publish(java.lang.Object)
     public abstract io.flutter.plugin.common.PluginRegistry$Registrar addActivityResultListener(io.flutter.plugin.common.PluginRegistry$ActivityResultListener)
@@ -2222,6 +2287,10 @@ kotlin.ranges.RangesKt___RangesKt
 androidx.fragment.app.FragmentTabHost$SavedState$1
 android.support.v4.media.session.MediaSessionCompat$Callback$CallbackHandler
 kotlin.WasExperimental
+io.flutter.plugins.camera.Camera:
+    public void stopImageStream()
+    private static final java.lang.String TAG
+    private static final long PRECAPTURE_TIMEOUT_MS
 kotlin.jvm.internal.DoubleCompanionObject
 androidx.core.text.PrecomputedTextCompat$Params$Builder
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$5
@@ -2270,6 +2339,7 @@ kotlin.coroutines.experimental.SafeContinuation$Fail
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$4
 kotlin.sequences.SequencesKt___SequencesKt$filterIndexed$1
 kotlin.reflect.KProperty1$Getter
+sq.flutter.tflite.R$string
 kotlin.reflect.KDeclarationContainer
 kotlin.coroutines.jvm.internal.DebugProbesKt
 androidx.drawerlayout.R$integer
@@ -2302,8 +2372,6 @@ kotlin.concurrent.TimersKt
 kotlin.coroutines.intrinsics.CoroutineSingletons
 kotlin.PreconditionsKt__AssertionsJVMKt
 kotlin.text.StringsKt___StringsKt$windowedSequence$2
-io.flutter.embedding.engine.dart.DartExecutor$DefaultBinaryMessenger:
-    public void send(java.lang.String,java.nio.ByteBuffer)
 androidx.core.app.ServiceCompat
 android.support.v4.media.session.MediaControllerCompatApi23$TransportControls
 kotlin.jvm.internal.ReflectionFactory
@@ -2322,6 +2390,7 @@ kotlin.collections.ArraysKt___ArraysKt$withIndex$6
 androidx.core.content.FileProvider
 kotlin.text.CharDirectionality$Companion
 androidx.media.AudioAttributesCompat$AudioManagerHidden
+io.flutter.plugins.camera.CameraUtils$CompareSizesByArea
 kotlin.ranges.CharProgressionIterator
 kotlin.jvm.internal.Ref$IntRef
 androidx.core.app.FrameMetricsAggregator$FrameMetricsApi24Impl$1
@@ -2426,6 +2495,7 @@ androidx.core.app.ShareCompat$IntentBuilder
 androidx.fragment.app.FragmentManagerNonConfig
 androidx.viewpager.widget.ViewPager$OnPageChangeListener
 kotlin.coroutines.experimental.CoroutineContext$DefaultImpls
+sq.flutter.tflite.R$layout
 io.flutter.embedding.engine.plugins.broadcastreceiver.BroadcastReceiverPluginBinding:
     public abstract android.content.BroadcastReceiver getBroadcastReceiver()
 kotlin.sequences.IndexingSequence$iterator$1
@@ -2507,6 +2577,7 @@ android.support.v4.media.MediaBrowserCompatApi21$ConnectionCallbackProxy
 androidx.versionedparcelable.VersionedParcelStream
 com.yanisalfian.flutterphonedirectcaller.R$style
 androidx.core.view.inputmethod.EditorInfoCompat
+sq.flutter.tflite.R$attr
 kotlin.text.Regex$fromInt$$inlined$apply$lambda$1
 kotlin.jvm.internal.PropertyReference0Impl
 androidx.slidingpanelayout.R$integer
@@ -2515,7 +2586,6 @@ androidx.lifecycle.LiveData$LifecycleBoundObserver:
     void <init>(androidx.lifecycle.LiveData,androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Observer)
     boolean isAttachedTo(androidx.lifecycle.LifecycleOwner)
     void detachObserver()
-com.example.hackathon.R$style
 androidx.asynclayoutinflater.view.AsyncLayoutInflater$OnInflateFinishedListener
 kotlin.random.KotlinRandom
 com.yanisalfian.flutterphonedirectcaller.FlutterPhoneDirectCallerPlugin:
@@ -2533,6 +2603,7 @@ kotlin.time.Clock
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenBy$2
 androidx.loader.R$dimen
 androidx.core.provider.SelfDestructiveThread$3
+com.example.final_hackathon.R$integer
 kotlin.ranges.ClosedFloatingPointRange
 androidx.lifecycle.Transformations$2$1
 androidx.viewpager.widget.PagerTitleStrip$PageListener
@@ -2550,7 +2621,6 @@ io.flutter.view.AccessibilityBridge:
 kotlin.NumbersKt
 android.support.v4.media.MediaDescriptionCompatApi21:
     private void <init>()
-io.flutter.plugin.common.EventChannel$StreamHandler
 kotlin.jvm.internal.Ref$DoubleRef
 androidx.media.MediaBrowserServiceCompatApi23$ServiceCompatProxy
 org.intellij.lang.annotations.JdkConstants$InputEventMask
@@ -2585,8 +2655,13 @@ androidx.customview.widget.ViewDragHelper$Callback
 androidx.core.R$id
 org.intellij.lang.annotations.JdkConstants$PatternFlags
 androidx.fragment.app.BackStackState
+com.example.final_hackathon.R$dimen
 androidx.viewpager.widget.PagerTabStrip$1
 androidx.core.provider.FontsContractCompat$4$8
+io.flutter.plugins.camera.CameraUtils:
+    private void <init>()
+    static io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation getDeviceOrientationFromDegrees(int)
+    static android.util.Size computeBestCaptureSize(android.hardware.camera2.params.StreamConfigurationMap)
 androidx.core.content.PermissionChecker$PermissionResult
 android.support.v4.media.MediaBrowserCompat$Subscription
 kotlin.collections.EmptyMap
@@ -2663,7 +2738,9 @@ androidx.fragment.app.Fragment$SavedState
 kotlin.random.PlatformRandomKt
 androidx.slidingpanelayout.widget.SlidingPaneLayout$PanelSlideListener
 kotlin.text.TypeAliasesKt
+sq.flutter.tflite.BuildConfig
 kotlin.text.RegexKt$fromInt$$inlined$apply$lambda$1
+io.flutter.plugins.camera.R
 androidx.core.app.NotificationCompat$InboxStyle
 androidx.core.widget.TintableImageSourceView
 kotlin.time.MonoClock
@@ -2720,17 +2797,14 @@ io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineBroadca
     void <init>(android.content.BroadcastReceiver)
     public android.content.BroadcastReceiver getBroadcastReceiver()
     private final android.content.BroadcastReceiver broadcastReceiver
-com.example.hackathon.R$attr
 android.support.v4.media.session.PlaybackStateCompat$Actions
 androidx.core.app.NotificationCompat$Action$WearableExtender
 androidx.swiperefreshlayout.widget.SwipeRefreshLayout$7
 androidx.viewpager.R$styleable
 io.flutter.embedding.engine.loader.FlutterLoader:
     public static io.flutter.embedding.engine.loader.FlutterLoader getInstance()
-    private java.lang.String fullAssetPathFrom(java.lang.String)
     public void ensureInitializationCompleteAsync(android.content.Context,java.lang.String[],android.os.Handler,java.lang.Runnable)
     public boolean initialized()
-    public java.lang.String getLookupKeyForAsset(java.lang.String)
     public java.lang.String getLookupKeyForAsset(java.lang.String,java.lang.String)
     private static final java.lang.String TAG
     private static final java.lang.String OLD_GEN_HEAP_SIZE_META_DATA_KEY
@@ -2777,6 +2851,7 @@ androidx.activity.ComponentActivity:
     private androidx.lifecycle.ViewModelStore mViewModelStore
     private final androidx.activity.OnBackPressedDispatcher mOnBackPressedDispatcher
     private int mContentLayoutId
+com.example.final_hackathon.R$layout
 androidx.versionedparcelable.ParcelImpl:
     public void <init>(androidx.versionedparcelable.VersionedParcelable)
     public androidx.versionedparcelable.VersionedParcelable getVersionedParcel()
@@ -2938,12 +3013,14 @@ kotlin.Suppress
 androidx.swiperefreshlayout.widget.SwipeRefreshLayout$2
 kotlin.collections.GroupingKt
 androidx.core.graphics.drawable.WrappedDrawableApi21
+io.flutter.plugins.camera.R$dimen
 androidx.lifecycle.LiveData$AlwaysActiveObserver
 kotlin.internal.RequireKotlin
 androidx.core.app.ActivityManagerCompat
 androidx.core.app.NotificationCompat$Action
 androidx.swiperefreshlayout.widget.CircularProgressDrawable$ProgressDrawableSize
 androidx.core.graphics.TypefaceCompatBaseImpl$1
+com.example.final_hackathon.R$id
 io.flutter.embedding.android.FlutterEngineConfigurator
 kotlin.coroutines.experimental.CoroutineContext$Element
 androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$1
@@ -2959,7 +3036,6 @@ androidx.arch.core.internal.SafeIterableMap:
     protected androidx.arch.core.internal.SafeIterableMap$Entry put(java.lang.Object,java.lang.Object)
 androidx.core.content.res.ConfigurationHelper
 kotlin.internal.OnlyInputTypes
-com.example.hackathon.R$drawable
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$4
 androidx.core.view.accessibility.AccessibilityViewCommand$ScrollToPositionArguments
 kotlin.coroutines.experimental.CombinedContext$toString$1
@@ -3057,6 +3133,7 @@ kotlin.jvm.internal.FloatCompanionObject
 androidx.swiperefreshlayout.R$dimen
 kotlin.properties.ReadOnlyProperty
 androidx.core.view.ViewPropertyAnimatorListenerAdapter
+io.flutter.plugins.camera.R$id
 io.flutter.plugin.common.StandardMessageCodec:
     private static final java.lang.String TAG
     private static final byte NULL
@@ -3091,7 +3168,6 @@ androidx.core.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNo
 android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$4
 kotlin.sequences.SequencesKt__SequencesKt$flatten$1
 androidx.core.view.NestedScrollingParent
-io.flutter.plugin.common.EventChannel$1
 androidx.core.app.NotificationCompat$Extender
 androidx.fragment.app.ListFragment
 androidx.coordinatorlayout.R$style
@@ -3145,6 +3221,29 @@ kotlin.NoWhenBranchMatchedException
 kotlin.text.MatchGroupCollection
 kotlin.ranges.ClosedRange$DefaultImpls
 kotlin.UnsafeVariance
+org.tensorflow.lite.NativeInterpreterWrapper:
+    void <init>(java.lang.String)
+    void <init>(java.nio.ByteBuffer)
+    void <init>(java.lang.String,org.tensorflow.lite.Interpreter$Options)
+    private static native void setCancelled(long,long,boolean)
+    private static native int getOutputDataType(long,int)
+    private static native int getExecutionPlanLength(long)
+    private static native java.lang.String[] getInputNames(long)
+    private static native java.lang.String[] getOutputNames(long)
+    private static native void numThreads(long,int)
+    private static native long createModel(java.lang.String,long)
+    private static native void resetVariableTensors(long,long)
+    void allocateTensors()
+    void setNumThreads(int)
+    void modifyGraphWithDelegate(org.tensorflow.lite.Delegate)
+    void resetVariableTensors()
+    int getInputIndex(java.lang.String)
+    int getOutputIndex(java.lang.String)
+    java.lang.Long getLastNativeInferenceDurationNanoseconds()
+    int getInputTensorCount()
+    int getExecutionPlanLength()
+    void setCancelled(boolean)
+    private static final int ERROR_BUFFER_SIZE
 android.support.v4.media.session.MediaControllerCompat$MediaControllerImpl
 androidx.core.content.res.GradientColorInflaterCompat$ColorStops
 kotlin.jvm.internal.PropertyReference2
@@ -3192,6 +3291,12 @@ android.support.v4.media.session.MediaSessionCompat$MediaSessionImplBase$Command
 kotlin.collections.CollectionsKt__ReversedViewsKt
 androidx.legacy.coreutils.R$layout
 androidx.core.provider.FontsContractCompat
+org.tensorflow.lite.gpu.GpuDelegate$Options:
+    public org.tensorflow.lite.gpu.GpuDelegate$Options setPrecisionLossAllowed(boolean)
+    public org.tensorflow.lite.gpu.GpuDelegate$Options setQuantizedModelsAllowed(boolean)
+    public org.tensorflow.lite.gpu.GpuDelegate$Options setInferencePreference(int)
+    public static final int INFERENCE_PREFERENCE_FAST_SINGLE_ANSWER
+    public static final int INFERENCE_PREFERENCE_SUSTAINED_SPEED
 kotlin.collections.MapAccessorsKt
 androidx.core.content.FileProvider$SimplePathStrategy
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$3
@@ -3238,7 +3343,6 @@ io.flutter.embedding.android.FlutterActivityAndFragmentDelegate:
     private static final java.lang.String TAG
     private static final java.lang.String FRAMEWORK_RESTORATION_BUNDLE_KEY
     private static final java.lang.String PLUGINS_RESTORATION_BUNDLE_KEY
-com.example.hackathon.R$styleable
 androidx.core.app.ActivityRecreator$3
 kotlin.internal.UProgressionUtilKt
 android.support.v4.media.session.ParcelableVolumeInfo:
@@ -3259,6 +3363,7 @@ io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding:
     public abstract void removeOnSaveStateListener(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding$OnSaveInstanceStateListener)
 androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 kotlin.sequences.SequencesKt___SequencesKt$sortedWith$1
+sq.flutter.tflite.R
 kotlin.ExperimentalMultiplatform
 androidx.fragment.app.FragmentTransitionCompat21$4
 kotlin.collections.unsigned.UArraysKt___UArraysJvmKt$asList$1
@@ -3386,6 +3491,25 @@ io.flutter.embedding.android.FlutterTextureView:
 kotlin.properties.ReadWriteProperty
 androidx.loader.content.ModernAsyncTask$Status
 androidx.core.view.ViewCompat
+org.tensorflow.lite.Interpreter:
+    public void <init>(java.io.File)
+    public void <init>(java.io.File,int)
+    public void <init>(java.io.File,org.tensorflow.lite.Interpreter$Options)
+    public void <init>(java.nio.ByteBuffer)
+    public void <init>(java.nio.ByteBuffer,int)
+    public void <init>(java.nio.MappedByteBuffer)
+    public void allocateTensors()
+    public void resizeInput(int,int[])
+    public void resizeInput(int,int[],boolean)
+    public int getInputTensorCount()
+    public int getInputIndex(java.lang.String)
+    public int getOutputIndex(java.lang.String)
+    public java.lang.Long getLastNativeInferenceDurationNanoseconds()
+    public void setNumThreads(int)
+    public void modifyGraphWithDelegate(org.tensorflow.lite.Delegate)
+    public void resetVariableTensors()
+    public void setCancelled(boolean)
+    int getExecutionPlanLength()
 androidx.lifecycle.ViewModelProvider$NewInstanceFactory
 androidx.fragment.app.FragmentManagerImpl$FragmentTag
 kotlin.jvm.internal.markers.KMutableIterable
@@ -3394,6 +3518,12 @@ androidx.core.os.CancellationSignal
 androidx.swiperefreshlayout.R$drawable
 androidx.core.app.NotificationCompat$BadgeIconType
 android.support.v4.media.MediaBrowserCompatApi21
+org.tensorflow.lite.nnapi.NnApiDelegate:
+    private void checkNotClosed()
+    private static native int getNnapiErrno(long)
+    public int getNnapiErrno()
+    public boolean hasErrors()
+    private static final long INVALID_DELEGATE_HANDLE
 androidx.legacy.app.ActionBarDrawerToggle$DelegateProvider
 org.jetbrains.annotations.NotNull
 androidx.loader.app.LoaderManagerImpl
@@ -3419,6 +3549,7 @@ kotlin.sequences.SequencesKt___SequencesKt$requireNoNulls$1
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$nullsFirst$1
 androidx.lifecycle.MediatorLiveData
 org.intellij.lang.annotations.JdkConstants$CursorType
+com.example.final_hackathon.BuildConfig
 kotlin.ULongKt
 androidx.annotation.RequiresPermission$Write
 androidx.core.graphics.drawable.IconCompat:
@@ -3471,7 +3602,6 @@ androidx.core.content.res.GradientColorInflaterCompat
 android.support.v4.media.session.IMediaControllerCallback$Stub$Proxy
 androidx.coordinatorlayout.widget.CoordinatorLayout$DefaultBehavior
 io.flutter.embedding.engine.dart.DartMessenger:
-    public void send(java.lang.String,java.nio.ByteBuffer)
     public int getPendingChannelResponseCount()
     private static final java.lang.String TAG
 kotlin.coroutines.jvm.internal.BaseContinuationImpl
@@ -3482,6 +3612,7 @@ android.support.v4.media.MediaBrowserCompat$MediaBrowserServiceCallbackImpl
 androidx.core.view.inputmethod.InputConnectionCompat$OnCommitContentListener
 androidx.loader.R$string
 kotlin.sequences.TakeSequence$iterator$1
+com.example.final_hackathon.R$mipmap
 androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$9
 androidx.customview.view.AbsSavedState
 androidx.print.R
@@ -3541,6 +3672,8 @@ androidx.loader.content.CursorLoader
 androidx.core.app.NavUtils
 androidx.core.graphics.ColorUtils
 androidx.fragment.app.FragmentManager$BackStackEntry
+sq.flutter.tflite.TflitePlugin:
+    private static final int BYTES_PER_CHANNEL
 androidx.drawerlayout.R
 androidx.coordinatorlayout.widget.DirectedAcyclicGraph
 androidx.media.R$attr
@@ -3714,6 +3847,7 @@ android.support.v4.media.MediaMetadataCompatApi21:
     public static java.lang.CharSequence getText(java.lang.Object,java.lang.String)
     public static java.lang.Object createFromParcel(android.os.Parcel)
     private void <init>()
+org.tensorflow.lite.R
 kotlin.jvm.internal.ArrayLongIterator
 kotlin.UByte$Companion
 androidx.fragment.app.Fragment$3
@@ -3800,6 +3934,7 @@ android.support.v4.media.session.MediaControllerCompat$Callback:
     void setHandler(android.os.Handler)
 androidx.swiperefreshlayout.widget.SwipeRefreshLayout$OnChildScrollUpCallback
 kotlin.jvm.JvmDefault
+com.example.final_hackathon.R$style
 androidx.annotation.ColorLong
 androidx.drawerlayout.R$style
 android.support.v4.media.session.MediaControllerCompat$TransportControlsApi24
@@ -3849,24 +3984,31 @@ androidx.customview.R$dimen
 androidx.core.provider.FontsContractCompat$4$5
 androidx.asynclayoutinflater.R$style
 androidx.core.content.ContextCompat$LegacyServiceMapHolder
+sq.flutter.tflite.TflitePlugin$RunYOLO$1:
+    final synthetic sq.flutter.tflite.TflitePlugin$RunYOLO this$1
 io.flutter.plugin.editing.ListenableEditingState$1:
     final synthetic io.flutter.plugin.editing.ListenableEditingState this$0
 androidx.savedstate.Recreator:
     private void reflectiveNew(java.lang.String)
+sq.flutter.tflite.TflitePlugin$2:
+    final synthetic sq.flutter.tflite.TflitePlugin this$0
 androidx.lifecycle.Lifecycle:
     java.util.concurrent.atomic.AtomicReference mInternalScopeRef
 io.flutter.embedding.android.AndroidKeyProcessor:
     private final io.flutter.plugin.editing.TextInputPlugin textInputPlugin
+io.flutter.plugins.camera.DartMessenger:
+    static final synthetic boolean $assertionsDisabled
 io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding:
-    private final android.content.Context applicationContext
     private final io.flutter.embedding.engine.FlutterEngine flutterEngine
-    private final io.flutter.view.TextureRegistry textureRegistry
     private final io.flutter.plugin.platform.PlatformViewRegistry platformViewRegistry
     private final io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterAssets flutterAssets
 io.flutter.embedding.engine.plugins.shim.ShimRegistrar:
     private final java.util.Map globalRegistrarMap
     private final java.lang.String pluginId
 androidx.savedstate.SavedStateRegistry$AutoRecreated
+org.tensorflow.lite.Tensor:
+    private final int[] shapeSignatureCopy
+    private final org.tensorflow.lite.Tensor$QuantizationParams quantizationParamsCopy
 io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack$FlutterMutator:
     private android.graphics.Rect rect
     private float[] radiis
@@ -3874,6 +4016,7 @@ io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack$FlutterMutator:
     final synthetic io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack this$0
 io.flutter.embedding.android.FlutterImageView:
     private int pendingImages
+org.tensorflow.lite.Tensor$QuantizationParams
 androidx.collection.ContainerHelpers:
     static final long[] EMPTY_LONGS
 android.support.v4.media.MediaMetadataCompat:
@@ -3888,17 +4031,27 @@ io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$1$1:
     final synthetic io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$1 this$1
 io.flutter.plugin.mouse.MouseCursorPlugin$2:
     final synthetic io.flutter.plugin.mouse.MouseCursorPlugin this$0
+io.flutter.plugins.camera.DartMessenger$3:
+    final synthetic io.flutter.plugins.camera.DartMessenger this$0
 io.flutter.plugin.editing.TextInputPlugin$2:
     final synthetic io.flutter.plugin.editing.TextInputPlugin this$0
 android.support.v4.os.ResultReceiver:
     final boolean mLocal
+sq.flutter.tflite.TflitePlugin$RunPix2PixOnBinary:
+    java.lang.String outputType
 io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineActivityPluginBinding:
     private final io.flutter.embedding.engine.plugins.lifecycle.HiddenLifecycleReference hiddenLifecycleReference
 io.flutter.embedding.engine.loader.FlutterApplicationInfo:
     public final java.lang.String vmSnapshotData
     public final java.lang.String isolateSnapshotData
+io.flutter.plugins.camera.CameraRegions:
+    static final synthetic boolean $assertionsDisabled
 io.flutter.embedding.engine.FlutterEngineConnectionRegistry$DefaultFlutterAssets:
     final io.flutter.embedding.engine.loader.FlutterLoader flutterLoader
+io.flutter.plugins.camera.Camera:
+    static final synthetic boolean $assertionsDisabled
+io.flutter.plugins.camera.DartMessenger$2:
+    final synthetic io.flutter.plugins.camera.DartMessenger this$0
 androidx.core.content.ContextCompat:
     private static final java.lang.Object sLock
 android.support.v4.media.session.MediaSessionCompat$Token:
@@ -3913,14 +4066,25 @@ io.flutter.view.AccessibilityBridge$SemanticsNode:
     private io.flutter.view.AccessibilityBridge$TextDirection textDirection
     private float previousScrollExtentMax
     private float previousScrollExtentMin
+sq.flutter.tflite.TflitePlugin$1:
+    final synthetic sq.flutter.tflite.TflitePlugin this$0
 android.support.v4.media.session.MediaControllerCompat$PlaybackInfo:
     private final int mPlaybackType
     private final int mAudioStream
     private final int mVolumeControl
     private final int mMaxVolume
     private final int mCurrentVolume
+io.flutter.plugins.camera.MethodCallHandlerImpl:
+    static final synthetic boolean $assertionsDisabled
+org.tensorflow.lite.NativeInterpreterWrapper:
+    private java.util.Map inputsIndexes
+    private java.util.Map outputsIndexes
 io.flutter.embedding.engine.loader.FlutterLoader$InitResult:
     final java.lang.String dataDirPath
+io.flutter.plugins.camera.DartMessenger$1:
+    final synthetic io.flutter.plugins.camera.DartMessenger this$0
+sq.flutter.tflite.TflitePlugin:
+    static final synthetic boolean $assertionsDisabled
 io.flutter.Log:
     private static int logLevel
     public static int ASSERT

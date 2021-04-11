@@ -1,4 +1,4 @@
-com.example.hackathon
+com.example.final_hackathon
 attr alpha
 attr coordinatorLayoutStyle
 attr font
@@ -173,6 +173,7 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 mipmap ic_launcher
+mipmap launcher_icon
 string status_bar_notification_info_overflow
 style LaunchTheme
 style NormalTheme
